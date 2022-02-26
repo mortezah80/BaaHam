@@ -1,0 +1,73 @@
+.BaaHam_NormalUsersHeader {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(73, 78, 84);
+}
+
+.BaaHam_NormalUsersContentContainer {
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    height: 1000px;
+}
+
+
+.BaaHam_NormalUsersContenttransparent {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top:-50px;
+}
+.BaaHam_NormalUsersContent {
+    background-color: white;
+    width: 65%;
+    margin:auto;
+    height: 700px;
+    border-radius: 25px;
+    display: flex;
+    padding:30px 0px;
+}
+.BaaHam_NUContentSideBar {
+    border-left:1px solid rgb(245, 245, 245);
+    padding:0px 20px;
+    flex:0.25;
+}
+.BaaHam_NUContentForm {
+    flex:0.75;
+
+}
+.BaaHam_NUContentSideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.BaaHam_NUContentSideBarUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.BaaHam_NUContentSideBarUserPicture {
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(0deg, rgba(254, 73, 2,1) 0%, rgba(255, 114, 60,1) 100%);
+    border-radius: 25%;
+    position: absolute;
+    top:-40px;
+}
+.BaaHam_NUContentSideBarUserName {
+    font-size: 22px;
+    font-weight: bold;
+}
+.BaaHam_NUContentSideBarUserEmail {
+    margin-top:5px;
+    color:rgb(189, 189, 189);
+    font-size: 14px;
+}
+.BaaHam_NUContentSideBarOptions {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    border-radius: 20px;
+    height: 500px;
+}
