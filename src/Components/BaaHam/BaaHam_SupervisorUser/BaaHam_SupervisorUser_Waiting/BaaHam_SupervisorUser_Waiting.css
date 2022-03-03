@@ -10,3 +10,28 @@
     background-color: rgb(245, 245, 245);
     border-radius: 19px;
 }
+.BaaHam_SupervisorUser_WaitingFooter {
+    display: flex;
+    margin-top:20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.BaaHam_SupervisorUser_WaitingFooterTitle {
+    font-size: 13px;
+    color:rgb(117, 117, 117);
+    font-weight: bold;
+    padding-right: 10px;
+}
+.BaaHam_SupervisorUser_WaitingFooterContent {
+    height: 30px;
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+}
+.BaaHam_SupervisorUser_WaitingFooterSelect {
+    width: 85%;
+}
+.BaaHam_SupervisorUser_WaitingBottomButtons {
+    margin-top:20px;
+}

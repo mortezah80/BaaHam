@@ -11,7 +11,7 @@ import BaaHam_NormalUsers_Check from './BaaHam_NormalUsers_Check/BaaHam_NormalUs
 import BaaHam_NormalUsers_Requests from './BaaHam_NormalUsers_Requests/BaaHam_NormalUsers_Requests'
 import BaaHam_NormalUsers_AgahihayeMan from './BaaHam_NormalUsers_AgahihayeMan/BaaHam_NormalUsers_AgahihayeMan'
 import BaaHam_NormalUsers_Favorites from './BaaHam_NormalUsers_Favorites/BaaHam_NormalUsers_Favorites'
-
+import Image2 from '../../../pic2.png'
 
 
 function BaaHam_NormalUsers() {
@@ -19,7 +19,29 @@ function BaaHam_NormalUsers() {
   return (
     <div className='BaaHam_NormalUsers'>
         <div className='BaaHam_NormalUsersHeader'>
-
+          <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
+            <div className='BaaHam_NormalUsersHeaderTopContainer'>
+              <div className='BaaHam_NormalUsersHeaderTopRight'>
+                <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
+                </div>
+                <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+              </div>
+              <div className='BaaHam_NormalUsersHeaderCenter'>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>خدمات</span>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>درباره ما</span>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>تماس با ما</span>
+              </div>
+              <div className='BaaHam_NormalUsersHeaderLeft'>
+                <span className='BaaHam_NormalUsersHeaderLeftTitle'>ورود/ثبت نام</span>
+            
+                      <div className='BaaHam_NU_ProfileButton'>
+                          <span>ثبت</span>
+                      </div>
+           
+              </div>
+            </div>
+          </div>
         </div>
         <div className='BaaHam_NormalUsersContentContainer'>
           <div className='BaaHam_NormalUsersContenttransparent'>
@@ -76,6 +98,7 @@ function BaaHam_NormalUsers() {
                     <div className='BaaHam_NUContentFormHeader'>
                         <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر عادی</span>
                     </div>
+                    
                     {
                       sidebar===1 ?
                       <BaaHam_NormalUsers_Profile/>
