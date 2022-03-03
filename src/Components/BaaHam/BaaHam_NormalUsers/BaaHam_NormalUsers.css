@@ -133,7 +133,7 @@
 
 .BaaHam_NormalUsersHeaderTopContainer {
     background-color: white;
-    width: 65%;
+    max-width: 900px;
     height: 70px;
     display: flex;
     align-items: center;

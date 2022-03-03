@@ -13,37 +13,13 @@ function BaaHam_ContentproductionUser() {
     const [sidebar ,Setsidebar] = useState(1)
   return (
     <div className='BaaHam_ContentproductionUser'>
-        <div className='BaaHam_NormalUsersHeader'>
-            <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
-            <div className='BaaHam_NormalUsersHeaderTopContainer'>
-              <div className='BaaHam_NormalUsersHeaderTopRight'>
-                <div className='BaaHam_NormalUsersHeaderImageContainer'>
-                <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
-                </div>
-                <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
-              </div>
-              <div className='BaaHam_NormalUsersHeaderCenter'>
-                <span className='BaaHam_NormalUsersHeaderCenterTitle'>خدمات</span>
-                <span className='BaaHam_NormalUsersHeaderCenterTitle'>درباره ما</span>
-                <span className='BaaHam_NormalUsersHeaderCenterTitle'>تماس با ما</span>
-              </div>
-              <div className='BaaHam_NormalUsersHeaderLeft'>
-                <span className='BaaHam_NormalUsersHeaderLeftTitle'>ورود/ثبت نام</span>
-            
-                      <div className='BaaHam_NU_ProfileButton'>
-                          <span>ثبت</span>
-                      </div>
-           
-              </div>
-            </div>
-          </div>
-        </div>
+       
         <div className='BaaHam_NormalUsersContentContainer'>
             <div className='BaaHam_NormalUsersContenttransparent'>
                 <div className='BaaHam_NormalUsersContent'>
                     <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
-                            <div className='BaaHam_NUContentSideBarUserPicture'>
+                            <div className='BaaHam_NUContentSideBarUserPicture BaaHam_CPUContentSideBarUserPicture'>
 
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
