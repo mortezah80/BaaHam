@@ -1,0 +1,12 @@
+.BaaHam_SU_WaitingBoxes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    padding-top: 30px;
+}
+.BaaHam_SupervisorUser_WaitingInformation{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 19px;
+}

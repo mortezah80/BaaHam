@@ -1,12 +1,34 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: rtl;
  
+}
+
+@font-face {
+  font-family: IRANYekan;
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/woff_Yekan/IRANYekanWebRegular.woff') format('woff'),
+  url('fonts/woff2_Yekan/IRANYekanWebRegular.woff2') format('woff2');
+}
+@font-face {
+  font-family: IRANSansX;
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/woff_IranSans/IRANSansX-Regular.woff') format('woff'),
+  url('fonts/woff2_IranSans/IRANSansX-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: KalamehWeb;
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/woff_kalameh/KalamehWeb-Regular.woff') format('woff'),
+  url('fonts/woff2_kalameh/KalamehWeb-Regular.woff2') format('woff2');
 }
 
 code {

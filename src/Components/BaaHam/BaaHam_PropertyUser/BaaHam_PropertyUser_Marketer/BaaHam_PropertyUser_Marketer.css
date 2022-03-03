@@ -1,0 +1,43 @@
+.BaaHam_PU_MarketerInputPercentBigContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.BaaHam_PU_MarketerInputPercentContainer {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.BaaHam_PU_MarketerInputTitleContainer {
+    background-color: rgb(52, 52, 52);
+    color:rgb(245,245,245);
+    width: 42%;
+    height:36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    
+}
+.BaaHam_PU_MarketerInputTitleContainer > span {
+    padding-bottom: 5px;
+}
+.BaaHam_PU_MarketerInput {
+    width: 49%;
+    margin:0px;
+    height: 36px;
+}
+
+.BaaHam_PU_MarketerButtonContainer {
+    margin-top:40px;
+}
+.BaaHam_PU_Marketer_TablesContainer {
+    display: flex;
+    flex-direction: column;
+    border-top:1px solid rgb(245, 245, 245);
+    margin-top:50px;
+}

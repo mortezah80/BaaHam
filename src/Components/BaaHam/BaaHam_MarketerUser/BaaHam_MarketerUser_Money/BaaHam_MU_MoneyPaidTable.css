@@ -1,0 +1,8 @@
+.BaaHam_MU_MoneyPaidTable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.BaaHam_MU_MoneyPaidTableItem {
+    width: 22%;
+}

@@ -1,0 +1,73 @@
+.BaaHam_NU_ProfileInputsContainer {
+
+    display: grid;
+    grid-template-columns: auto auto;
+
+    row-gap: 40px;
+    padding-top:30px;
+    justify-content: space-between;
+}
+.BaaHam_NU_ProfileInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.BaaHam_NU_ProfileInputTitle {
+    font-size: 13px;
+    padding-right:10px;
+    font-weight: bold;
+    color:rgb(111, 111, 111)
+}
+.BaaHam_NU_ProfileInput {
+    margin-top:7px;
+    width: 267px;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    height: 40px;
+    border-radius: 10px;
+    padding:0px 10px;
+}
+.BaaHam_NU_ProfileTextArea {
+    resize: none;
+    width: 100%;
+}
+.BaaHam_NU_ProfileTextAreaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top:40px;
+}
+.BaaHam_NU_ProfileTextArea {
+    margin-top:7px;
+    width: 96.5%;
+    border: none;
+    outline: none;
+    background-color: rgb(245, 245, 245);
+    height: 60px;
+    border-radius: 10px;
+    padding:10px 10px;
+}
+.BaaHam_NU_ProfileButtonContainer {
+    display: flex;
+    justify-content: end;
+    margin-top:20px;
+    display: flex;
+    width: 100%;
+    
+}
+.BaaHam_NU_ProfileButton {
+    width: 140px;
+    height: 42px;
+    border-radius: 17px;
+    background-color: rgb(254, 72, 0);
+    color:white;
+    font-size:15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 7px 1px rgba(254, 72, 0, 0.377) ;
+    cursor: pointer;
+}
