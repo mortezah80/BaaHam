@@ -10,13 +10,37 @@ import BaaHam_MarketerUser_SabteAgahi from './BaaHam_MarketerUser_SabteAgahi/Baa
 import BaaHam_MarketerUser_Introduction from './BaaHam_MarketerUser_Introduction/BaaHam_MarketerUser_Introduction'
 import BaaHam_MarketerUser_Money from './BaaHam_MarketerUser_Money/BaaHam_MarketerUser_Money'
 import BaaHam_MarketerUser_Information from './BaaHam_MarketerUser_Information/BaaHam_MarketerUser_Information'
+import Image2 from '../../../pic2.png'
+
 
 function BaaHam_MarketerUser() {
     const [sidebar ,Setsidebar] = useState(1)
   return (
     <div className='BaaHam_MarketerUser'>
-         <div className='BaaHam_NormalUsersHeader'>
-
+        <div className='BaaHam_NormalUsersHeader'>
+            <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
+            <div className='BaaHam_NormalUsersHeaderTopContainer'>
+              <div className='BaaHam_NormalUsersHeaderTopRight'>
+                <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
+                </div>
+                <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+              </div>
+              <div className='BaaHam_NormalUsersHeaderCenter'>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>خدمات</span>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>درباره ما</span>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>تماس با ما</span>
+              </div>
+              <div className='BaaHam_NormalUsersHeaderLeft'>
+                <span className='BaaHam_NormalUsersHeaderLeftTitle'>ورود/ثبت نام</span>
+            
+                      <div className='BaaHam_NU_ProfileButton'>
+                          <span>ثبت</span>
+                      </div>
+           
+              </div>
+            </div>
+          </div>
         </div>
         <div className='BaaHam_NormalUsersContentContainer'>
             <div className='BaaHam_NormalUsersContenttransparent'>

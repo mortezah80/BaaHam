@@ -9,6 +9,8 @@ import BaaHam_VisitingExpertUser_Profile from './BaaHam_VisitingExpertUser_Profi
 import BaaHam_VisitingExpertUser_Marketer from './BaaHam_VisitingExpertUser_Marketer/BaaHam_VisitingExpertUser_Marketer'
 import BaaHam_VisitingExpertUser_Order from './BaaHam_VisitingExpertUser_Order/BaaHam_VisitingExpertUser_Order'
 import BaaHam_VisitingExpertUser_MyHouses from './BaaHam_VisitingExpertUser_MyHouses/BaaHam_VisitingExpertUser_MyHouses'
+import Image2 from '../../../pic2.png'
+
 
 
 function BaaHam_VisitingExpertUser() {
@@ -16,7 +18,29 @@ function BaaHam_VisitingExpertUser() {
   return (
     <div className='BaaHam_VisitingExpertUser'>
         <div className='BaaHam_NormalUsersHeader'>
-
+            <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
+                <div className='BaaHam_NormalUsersHeaderTopContainer'>
+                <div className='BaaHam_NormalUsersHeaderTopRight'>
+                    <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                    <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
+                    </div>
+                    <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+                </div>
+                <div className='BaaHam_NormalUsersHeaderCenter'>
+                    <span className='BaaHam_NormalUsersHeaderCenterTitle'>خدمات</span>
+                    <span className='BaaHam_NormalUsersHeaderCenterTitle'>درباره ما</span>
+                    <span className='BaaHam_NormalUsersHeaderCenterTitle'>تماس با ما</span>
+                </div>
+                <div className='BaaHam_NormalUsersHeaderLeft'>
+                    <span className='BaaHam_NormalUsersHeaderLeftTitle'>ورود/ثبت نام</span>
+                
+                        <div className='BaaHam_NU_ProfileButton'>
+                            <span>ثبت</span>
+                        </div>
+            
+                </div>
+                </div>
+            </div>
         </div>
         <div className='BaaHam_NormalUsersContentContainer'>
             <div className='BaaHam_NormalUsersContenttransparent'>

@@ -8,6 +8,7 @@ import {AiOutlineHeart} from 'react-icons/ai'
 import BaaHam_PropertyUser_Profile from './BaaHam_PropertyUser_Profile/BaaHam_PropertyUser_Profile'
 import BaaHam_PropertyUser_Marketer from './BaaHam_PropertyUser_Marketer/BaaHam_PropertyUser_Marketer'
 import BaaHam_PropertyUser_Order from './BaaHam_PropertyUser_Order/BaaHam_PropertyUser_Order'
+import Image2 from '../../../pic2.png'
 
 
 function BaaHam_PropertyUser() {
@@ -15,7 +16,29 @@ function BaaHam_PropertyUser() {
   return (
     <div className='BaaHam_NormalUsers'>
     <div className='BaaHam_NormalUsersHeader'>
-
+        <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
+            <div className='BaaHam_NormalUsersHeaderTopContainer'>
+              <div className='BaaHam_NormalUsersHeaderTopRight'>
+                <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
+                </div>
+                <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+              </div>
+              <div className='BaaHam_NormalUsersHeaderCenter'>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>خدمات</span>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>درباره ما</span>
+                <span className='BaaHam_NormalUsersHeaderCenterTitle'>تماس با ما</span>
+              </div>
+              <div className='BaaHam_NormalUsersHeaderLeft'>
+                <span className='BaaHam_NormalUsersHeaderLeftTitle'>ورود/ثبت نام</span>
+            
+                      <div className='BaaHam_NU_ProfileButton'>
+                          <span>ثبت</span>
+                      </div>
+           
+              </div>
+            </div>
+          </div>
     </div>
     <div className='BaaHam_NormalUsersContentContainer'>
       <div className='BaaHam_NormalUsersContenttransparent'>
