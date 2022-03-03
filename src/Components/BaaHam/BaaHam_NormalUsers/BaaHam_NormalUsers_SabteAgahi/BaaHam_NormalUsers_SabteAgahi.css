@@ -37,6 +37,7 @@
     border-radius: 14px;
     margin-top:10px;
     cursor: pointer;
+    font-family: IRANSansX;
 }
 .BaaHam_NormalUsers_SabteAgahiTitle1Container {
     margin-top:40px;
@@ -229,6 +230,7 @@
     font-weight: bold;
     border:2px solid rgb(255, 73, 0);
     cursor: pointer;
+    font-family: KalamehWeb;
 }
 .BaaHam_NU_SabteAgahiBottomButton2 {
     margin-left:10px;
