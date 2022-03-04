@@ -11,6 +11,9 @@ import BaaHam_MarketerUser_Introduction from './BaaHam_MarketerUser_Introduction
 import BaaHam_MarketerUser_Money from './BaaHam_MarketerUser_Money/BaaHam_MarketerUser_Money'
 import BaaHam_MarketerUser_Information from './BaaHam_MarketerUser_Information/BaaHam_MarketerUser_Information'
 import Image2 from '../../../pic2.png'
+import UserImage from '../../../user.png'
+import FooterImage from '../../../Footer.jpg'
+import {IoExitOutline} from 'react-icons/io5'
 
 
 function BaaHam_MarketerUser() {
@@ -24,7 +27,7 @@ function BaaHam_MarketerUser() {
                     <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
                             <div className='BaaHam_NUContentSideBarUserPicture BaaHam_MUContentSideBarUserPicture'>
-
+                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
                             <span className='BaaHam_NUContentSideBarUserEmail'>Example@gmail.com</span>
@@ -60,7 +63,12 @@ function BaaHam_MarketerUser() {
                             </div>
                             <span className='BaaHam_NUContentSideBarOptionTitle'>نقدینگی  </span>
                             </div>
-
+                            <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
+                                <div className='BaaHam_NUContentSideBarUserExitButton'>
+                                    <IoExitOutline/>
+                                </div> 
+                                <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            </div>
                         </div>
                     </div>
                     <div className='BaaHam_NUContentForm'>
@@ -97,6 +105,9 @@ function BaaHam_MarketerUser() {
                         }
                     
                     </div>
+                </div>
+                <div className='BaaHamMainFooterContainer'>
+                    <img alt="hi" src={FooterImage} className="BaaHamMainFooter"/>
                 </div>
             </div>   
         </div>

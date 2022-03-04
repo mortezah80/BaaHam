@@ -8,6 +8,10 @@ import {GiClick} from 'react-icons/gi'
 import {RiFileListLine} from 'react-icons/ri'
 import {AiOutlineHeart} from 'react-icons/ai'
 import Image2 from '../../../pic2.png'
+import UserImage from '../../../user.png'
+import FooterImage from '../../../Footer.jpg'
+import {IoExitOutline} from 'react-icons/io5'
+
 
 function BaaHam_ContentproductionUser() {
     const [sidebar ,Setsidebar] = useState(1)
@@ -20,7 +24,7 @@ function BaaHam_ContentproductionUser() {
                     <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
                             <div className='BaaHam_NUContentSideBarUserPicture BaaHam_CPUContentSideBarUserPicture'>
-
+                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
                             <span className='BaaHam_NUContentSideBarUserEmail'>Example@gmail.com</span>
@@ -38,13 +42,18 @@ function BaaHam_ContentproductionUser() {
                             </div>
                             <span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span>
                             </div>
-                            
+                            <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
+                                <div className='BaaHam_NUContentSideBarUserExitButton'>
+                                    <IoExitOutline/>
+                                </div> 
+                                <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            </div>
 
                         </div>
                     </div>
                     <div className='BaaHam_NUContentForm'>
                         <div className='BaaHam_NUContentFormHeader'>
-                            <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر املاک</span>
+                            <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر تولید محتوا</span>
                         </div>
                         
                         {
@@ -63,6 +72,9 @@ function BaaHam_ContentproductionUser() {
                         }
                     
                     </div>
+                </div>
+                <div className='BaaHamMainFooterContainer'>
+                    <img alt="hi" src={FooterImage} className="BaaHamMainFooter"/>
                 </div>
             </div>   
         </div>

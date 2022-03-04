@@ -10,7 +10,9 @@ import BaaHam_VisitingExpertUser_Marketer from './BaaHam_VisitingExpertUser_Mark
 import BaaHam_VisitingExpertUser_Order from './BaaHam_VisitingExpertUser_Order/BaaHam_VisitingExpertUser_Order'
 import BaaHam_VisitingExpertUser_MyHouses from './BaaHam_VisitingExpertUser_MyHouses/BaaHam_VisitingExpertUser_MyHouses'
 import Image2 from '../../../pic2.png'
-
+import UserImage from '../../../user.png'
+import FooterImage from '../../../Footer.jpg'
+import {IoExitOutline} from 'react-icons/io5'
 
 
 function BaaHam_VisitingExpertUser() {
@@ -24,7 +26,7 @@ function BaaHam_VisitingExpertUser() {
                     <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
                             <div className='BaaHam_NUContentSideBarUserPicture BaaHam_VEUContentSideBarUserPicture'>
-
+                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
                             <span className='BaaHam_NUContentSideBarUserEmail'>Example@gmail.com</span>
@@ -78,12 +80,17 @@ function BaaHam_VisitingExpertUser() {
                             </div>
                             <span className='BaaHam_NUContentSideBarOptionTitle'>ملک های من</span>
                             </div>
-
+                            <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
+                                <div className='BaaHam_NUContentSideBarUserExitButton'>
+                                    <IoExitOutline/>
+                                </div> 
+                                <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            </div>
                         </div>
                     </div>
                     <div className='BaaHam_NUContentForm'>
                         <div className='BaaHam_NUContentFormHeader'>
-                            <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر املاک</span>
+                            <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر کارشناس بازدید</span>
                         </div>
                         
                         {
@@ -108,6 +115,9 @@ function BaaHam_VisitingExpertUser() {
                         }
                     
                     </div>
+                </div>
+                <div className='BaaHamMainFooterContainer'>
+                    <img alt="hi" src={FooterImage} className="BaaHamMainFooter"/>
                 </div>
             </div>   
         </div>

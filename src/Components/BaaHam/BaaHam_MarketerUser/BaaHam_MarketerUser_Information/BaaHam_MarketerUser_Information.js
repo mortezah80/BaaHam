@@ -149,28 +149,28 @@ function BaaHam_MarketerUser_Information() {
         <div className='BaaHam_MU_InformationInputsContainer'>
             <div className='BaaHam_NU_ProfileInputContainer3'>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer'>
-                    <span className='BaaHam_NU_ProfileInputTitle'>تلفن ثابت</span>
+                    <span className='BaaHam_NU_ProfileInputTitle'>نام شعبه </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput1' type="text" />
                 </div>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer'>
-                    <span className='BaaHam_NU_ProfileInputTitle BaaHam_MU_InformationInputTitle'>کد شهر </span>
+                    <span className='BaaHam_NU_ProfileInputTitle BaaHam_MU_InformationInputTitle'>کد شعبه </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput2' type="text" />
                 </div>
             </div>
    
             <div className='BaaHam_NU_ProfileInputContainer'>
-                <span className='BaaHam_NU_ProfileInputTitle'> کد ملی</span>
+                <span className='BaaHam_NU_ProfileInputTitle'> شماره کارت </span>
                 <input className='BaaHam_NU_ProfileInput' type="text" />
             </div>
         </div>
         <div className='BaaHam_MU_InformationInputsContainer BaaHam_MU_InformationInputsContainer4'>
             <div className='BaaHam_NU_ProfileInputContainer3'>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer4_1'>
-                    <span className='BaaHam_NU_ProfileInputTitle'>تلفن ثابت</span>
+                    <span className='BaaHam_NU_ProfileInputTitle'>شماره حساب </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput4_1' type="text" />
                 </div>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer4'>
-                    <span className='BaaHam_NU_ProfileInputTitle BaaHam_MU_InformationInputTitle'>کد شهر </span>
+                    <span className='BaaHam_NU_ProfileInputTitle BaaHam_MU_InformationInputTitle'>شماره شبا  </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput4' type="text" />
                 </div>
             </div>

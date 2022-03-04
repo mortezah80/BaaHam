@@ -1,14 +1,22 @@
+.BaaHam_NormalUsers {
+
+}
+
 .BaaHam_NormalUsersHeader {
-    height: 200px;
+    height: 240px;
     width: 100%;
     background-color: rgb(73, 78, 84);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .BaaHam_NormalUsersContentContainer {
     background-color: rgb(245, 245, 245);
     position: relative;
-    height: 3000px;
+
 }
+
 .BaaHam_NormalUsersHeaderTopContainerWhite {
     width: 100%;
     background-color: white;
@@ -24,11 +32,13 @@
     background-color: white;
     width: 65%;
     margin:auto;
-    height:2000px;
+    height:auto;
     border-radius: 25px;
     display: flex;
     padding:30px 0px;
-    
+    margin-bottom: 50px;
+    max-width: 936px;
+    margin: auto;
 }
 .BaaHam_NUContentSideBar {
     border-left:2px solid rgb(245, 245, 245);
@@ -59,6 +69,9 @@
     border-radius: 25%;
     position: absolute;
     top:-40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .BaaHam_NUContentSideBarUserName {
     font-size: 22px;
@@ -74,33 +87,39 @@
     background-color: rgb(245, 245, 245);
     width: 100%;
     border-radius: 20px;
-    height: 500px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
 }
 .BaaHam_NUContentSideBarOption {
     display: flex;
     width: 100%;
     align-items: center;
     margin-top:30px;
-    padding-right: 70px;
+
     color:rgb(116, 116, 116);
     cursor: pointer;
     transition: all 0.1s ease;
+  
 }
 .BaaHam_NUContentSideBarOption:hover {
     color:rgba(254, 79, 10, 0.445);
     transition: all 0.1s ease;
 }
 .BaaHam_NUContentSideBarOptionActive {
-    color:rgb(254, 78, 10)
+    color:rgb(254, 78, 10);
+    border-right:7.5px solid rgb(254, 78, 10);
+    margin-right:7.5px;
 }
 .BaaHam_NUContentSideBarOptionActive:hover {
     color:rgb(254, 78, 10)
 }
 .BaaHam_NUContentSideBarOptionIcon {
     font-size: 20px;
+    margin-right:27px;
 }
 
 .BaaHam_NUContentSideBarOptionTitle {
@@ -180,4 +199,38 @@
     color:rgb(52, 52, 52);
     margin-left:12px;
     font-weight: bold;
+}
+.BaaHam_NUContentSideBarUserPictureSelf {
+    width: 103px;
+    height: 100px;
+    margin-left:3px;
+}   
+
+
+.BaaHam_NUContentSideBarUserExitButtonContainer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top:auto;
+    margin-bottom: 30px;
+    width: 73%;
+    height: 41px;
+    border-radius: 8px;
+    justify-content: center;
+    cursor: pointer;
+    margin-top:90px;
+}
+.BaaHam_NUContentSideBarUserExitButtonTitle {
+    color:rgb(52, 52, 52);
+    margin-right:4px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: IRANSansX;
+}
+.BaaHam_NUContentSideBarUserExitButton {
+    color:rgb(254, 84, 17);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

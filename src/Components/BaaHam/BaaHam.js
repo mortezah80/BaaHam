@@ -9,13 +9,13 @@ import BaaHam_ContentproductionUser from './BaaHam_ContentproductionUser/BaaHam_
 import { Switch , Route } from 'react-router-dom'
 import { BrowserRouter as Router} from 'react-router-dom';
 import Image2 from '../../pic2.png'
-
-
+import BackgroundImage from '../../background.jpg'
+import FooterImage from '../../Footer.jpg'
 
 function BaaHam() {
   return (
     <div className='BaaHam'>
-  <div className='BaaHam_NormalUsersHeader'>
+        <div className='BaaHam_NormalUsersHeader'>
           <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
             <div className='BaaHam_NormalUsersHeaderTopContainer'>
               <div className='BaaHam_NormalUsersHeaderTopRight'>
@@ -38,6 +38,9 @@ function BaaHam() {
            
               </div>
             </div>
+          </div>
+          <div className='BaaHam_NormalUsersHeaderImageContainer'>
+              <img alt="hi" src={BackgroundImage} className="BaaHam_NormalUsersHeaderImageContainerImage" />
           </div>
         </div>
           <div className='BaaHamContent'>
@@ -64,7 +67,9 @@ function BaaHam() {
                 <BaaHam_ContentproductionUser/>
               </Route>
             </Switch>
+        
           </div>
+        
     </div>
   )
 }

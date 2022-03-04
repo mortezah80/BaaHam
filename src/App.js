@@ -1,6 +1,8 @@
 import './App.css';
 import BaaHam from './Components/BaaHam/BaaHam';
 import { BrowserRouter as Router} from 'react-router-dom';
+import FooterImage from './Footer.jpg'
+
 
 function App() {
   return (

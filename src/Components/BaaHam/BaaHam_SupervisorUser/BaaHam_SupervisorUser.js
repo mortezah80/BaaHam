@@ -8,6 +8,9 @@ import {AiOutlineHeart} from 'react-icons/ai'
 import BaaHam_SupervisorUser_Profile from './BaaHam_SupervisorUser_Profile/BaaHam_SupervisorUser_Profile'
 import BaaHam_SupervisorUser_Waiting from './BaaHam_SupervisorUser_Waiting/BaaHam_SupervisorUser_Waiting'
 import Image2 from '../../../pic2.png'
+import UserImage from '../../../user.png'
+import FooterImage from '../../../Footer.jpg'
+import {IoExitOutline} from 'react-icons/io5'
 
 
 
@@ -22,7 +25,7 @@ function BaaHam_SupervisorUser() {
                       <div className='BaaHam_NUContentSideBar'>
                           <div className='BaaHam_NUContentSideBarUser'>
                               <div className='BaaHam_NUContentSideBarUserPicture BaaHam_SUContentSideBarUserPicture'>
-  
+                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
                               </div>
                               <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
                               <span className='BaaHam_NUContentSideBarUserEmail'>Example@gmail.com</span>
@@ -40,11 +43,17 @@ function BaaHam_SupervisorUser() {
                               </div>
                               <span className='BaaHam_NUContentSideBarOptionTitle'> در انتظار تایید</span>
                               </div>
+                              <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
+                                <div className='BaaHam_NUContentSideBarUserExitButton'>
+                                    <IoExitOutline/>
+                                </div> 
+                                <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            </div>
                           </div>
                       </div>
                       <div className='BaaHam_NUContentForm'>
                           <div className='BaaHam_NUContentFormHeader'>
-                              <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر املاک</span>
+                              <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر ناظر</span>
                           </div>
                           
                           {
@@ -64,6 +73,9 @@ function BaaHam_SupervisorUser() {
                           }
                       
                       </div>
+                  </div>
+                  <div className='BaaHamMainFooterContainer'>
+                    <img alt="hi" src={FooterImage} className="BaaHamMainFooter"/>
                   </div>
               </div>   
           </div>
