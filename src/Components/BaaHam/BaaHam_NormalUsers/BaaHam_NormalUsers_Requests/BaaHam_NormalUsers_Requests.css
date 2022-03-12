@@ -41,7 +41,7 @@
     position: absolute;
     bottom: -11px;
     width: 100%;
-  
+
 }
 .BaaHam_NormalUsers_RequestsStepper {
     display: flex;
@@ -70,6 +70,7 @@
     padding: 0px 10px;
     line-height: 26px;
     z-index: 100;
+    text-align: center;
 }
 .BaaHam_NormalUsers_RequestsStepperBottomBox {
     background-color: rgb(216, 216, 216);
@@ -164,4 +165,97 @@
     font-weight: bold;
     border-bottom: 2px solid rgb(204, 204, 204);
     padding-bottom: 6px;
+}
+
+@media screen and (max-width : 1255px)  {
+    .BaaHam_NormalUsers_RequestsStepperTopBox {
+        width: 70px;
+        height: 70px;
+    }
+    .BaaHam_NormalUsers_RequestsStepperTopBox > span {
+        font-size: 10px;
+        padding: 0px 4px;
+    }
+ 
+}
+
+@media screen and (max-width : 1230px)  {
+    .BaaHam_NU_RequestTicketsContainer {
+        grid-template-columns:  auto auto auto;
+    }
+}
+@media screen and (max-width : 1100px)  {
+    .BaaHam_NU_RequestTicketsContainer {
+        grid-template-columns:  auto auto auto auto;
+    }
+}
+@media screen and (max-width : 960px)  {
+    .BaaHam_NU_RequestTicketsContainer {
+        grid-template-columns:  auto auto auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width : 815px)  {
+    .BaaHam_NormalUsers_RequestsStepperTopBox {
+        width: 50px;
+        height: 60px;
+        border-radius: 7px;
+    }
+    .BaaHam_NormalUsers_RequestsStepperTopBox > span {
+        font-size: 9px;
+  
+        padding: 0px 2px;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width : 760px) {
+    .BaaHam_NU_RequestTicketsContainer {
+        grid-template-columns:  auto auto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width : 500px)  {
+    .BaaHam_NU_RequestTicketsContainer {
+        grid-template-columns:  auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .BaaHam_NormalUsers_RequestsStepperTopBox {
+        width: 28px;
+        height: 90px;
+        border-radius: 5px;
+    }
+    .BaaHam_NormalUsers_RequestsStepperTopBox > span {
+        font-size: 7px;
+  
+        padding: 0px 2px;
+        line-height: 15px;
+    }
+    .BaaHam_NormalUsers_RequestsStepperBottomBox {
+        width: 20px;
+        height: 20px;
+    }
+    .BaaHam_NormalUsers_RequestsStepperBigContainer {
+        width: 100%;
+    }
+    .BaaHam_NormalUsers_RequestsStepperBox {
+        margin:0px 0px;
+    }
+ 
+    .BaaHam_NormalUsers_RequestsHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+    .BaaHam_NormalUsers_RequestsHeaderTitle {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .BaaHam_NU_RequestBottomButtons {
+        flex-direction: column;
+    }
+    .BaaHam_NU_RequestBottomButton1 {
+        margin-bottom: 6px;
+    }
 }

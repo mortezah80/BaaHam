@@ -6,11 +6,13 @@ import BaaHam_PropertyUser from './BaaHam_PropertyUser/BaaHam_PropertyUser'
 import BaaHam_SupervisorUser from './BaaHam_SupervisorUser/BaaHam_SupervisorUser'
 import BaaHam_VisitingExpertUser from './BaaHam_VisitingExpertUser/BaaHam_VisitingExpertUser'
 import BaaHam_ContentproductionUser from './BaaHam_ContentproductionUser/BaaHam_ContentproductionUser'
-import { Switch , Route } from 'react-router-dom'
-import { BrowserRouter as Router} from 'react-router-dom';
+import {Switch , Route , BrowserRouter as Router ,  Link} from 'react-router-dom';
 import Image2 from '../../pic2.png'
 import BackgroundImage from '../../background.jpg'
 import FooterImage from '../../Footer.jpg'
+
+
+
 
 function BaaHam() {
   return (
@@ -46,7 +48,7 @@ function BaaHam() {
           <div className='BaaHamContent'>
      
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/NormalUsers">
                 <Router>
                 <BaaHam_NormalUsers/>
                 </Router>

@@ -80,3 +80,24 @@
     justify-content: center;
     padding-right:2px;
 }
+
+@media screen and (max-width : 1245px) {
+    .BaaHam_NormalUsers_AgahiBoxContent {
+        flex:0.5;
+    }
+}
+@media screen and (max-width : 867px) {
+    .BaaHam_NormalUsers_AgahiBox {
+        flex-direction: column;
+        height:auto;
+    }
+    .BaaHam_NormalUsers_AgahiBoxContent {
+        width: 90%;
+        margin-top:20px;
+    }
+}
+@media screen and (max-width : 385px) {
+    .BaaHam_NU_AgahiBoxFooterDateTime > span {
+        font-size: 10px !important;
+    }
+}

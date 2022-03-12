@@ -13,19 +13,39 @@ import { useMediaQuery } from 'react-responsive'
 
 
 function SabteAgahi_DropDown(props) {
+
     const res500 = useMediaQuery({ query: '(max-width: 500px)' })
     const res600 = useMediaQuery({ query: '(max-width: 600px)' })
     const res700 = useMediaQuery({ query: '(max-width: 700px)' })
+    const q1380 = useMediaQuery({ query: '(max-width: 1380px)' })
+    const q1230 = useMediaQuery({ query: '(max-width: 1230px)' })
+    const q920 = useMediaQuery({ query: '(max-width: 920px)' })
+    const q775 = useMediaQuery({ query: '(max-width: 775px)' })
+    const q715 = useMediaQuery({ query: '(max-width: 715px)' })
+    let fontSizeRes = "13px"
     let selectHeight = "36px";
-    if (res700) {
-        selectHeight = "33px"
+    let selectWidth ="275px"
+    if (q1380) {
+      selectWidth = "245px"
     }
-    if (res600) {
-        selectHeight = "27px"
+
+ 
+    if (q1230) {
+      selectWidth = "200px"
+    }
+    if (q920) {
+      fontSizeRes="11px"
+    }
+    if (q775 ) {
+      fontSizeRes = "9.5px"
+    }
+    if (q715 ) {
+      fontSizeRes = "11px"
     }
     if (res500) {
-        selectHeight = "23px"
-    }
+      selectHeight = "30px"
+      fontSizeRes = "10px"
+  }
 const customStyles = {
     
     control: (base, state) => ({
@@ -36,7 +56,7 @@ const customStyles = {
       }*/
       minHeight:selectHeight,
       height:selectHeight,
-      width:'275px',
+      width:"100%",
       border:'2px solid rgb(159, 159, 159)',
       borderRadius:"10px",
       "&:hover": {
@@ -65,10 +85,10 @@ const customStyles = {
     valueContainer: (provided, state) => ({
       ...provided,
       height: selectHeight,
-      padding: '0 6px',
+    
       paddingBottom:'5px',
       display:'flex',
-      fontSize:'13px',
+      fontSize:fontSizeRes,
       color: 'rgb(98, 98, 98)',
       fontWeight : 'bold'
     }),

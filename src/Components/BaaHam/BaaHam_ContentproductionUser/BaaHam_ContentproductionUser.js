@@ -11,6 +11,7 @@ import Image2 from '../../../pic2.png'
 import UserImage from '../../../user.png'
 import FooterImage from '../../../Footer.jpg'
 import {IoExitOutline} from 'react-icons/io5'
+import {Switch , Route , BrowserRouter as Router ,  Link} from 'react-router-dom';
 
 
 function BaaHam_ContentproductionUser() {
@@ -21,9 +22,9 @@ function BaaHam_ContentproductionUser() {
         <div className='BaaHam_NormalUsersContentContainer'>
             <div className='BaaHam_NormalUsersContenttransparent'>
                 <div className='BaaHam_NormalUsersContent'>
-                    <div className='BaaHam_NUContentSideBar'>
+                <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
-                            <div className='BaaHam_NUContentSideBarUserPicture BaaHam_CPUContentSideBarUserPicture'>
+                            <div className='BaaHam_NUContentSideBarUserPicture'>
                                 <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
@@ -34,29 +35,32 @@ function BaaHam_ContentproductionUser() {
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <CgProfile/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span>
+                            <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/ContentproductionUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <MdOutlineEditNote/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span>
-                            </div>
-                            <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
-                                <div className='BaaHam_NUContentSideBarUserExitButton'>
-                                    <IoExitOutline/>
-                                </div> 
-                                <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/ContentproductionUser/Make"><span className='BaaHam_NUContentSideBarOptionTitle'>تولید محتوا   </span></Link>
+                            
                             </div>
 
+
+                            <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
+                            <div className='BaaHam_NUContentSideBarUserExitButton'>
+                                <IoExitOutline/>
+                            </div> 
+                            <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            </div>
                         </div>
+                
                     </div>
                     <div className='BaaHam_NUContentForm'>
                         <div className='BaaHam_NUContentFormHeader'>
                             <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر تولید محتوا</span>
                         </div>
                         
-                        {
+                        {/*
                             sidebar===1 ? 
                             <BaaHam_ContentproductionUser_Profile/>
                             :
@@ -70,6 +74,15 @@ function BaaHam_ContentproductionUser() {
                         :
                         <BaaHam_NormalUsers_Favorites/>*/
                         }
+                        <Switch>
+                            <Route exact path="/ContentproductionUser/Profile">
+                                <BaaHam_ContentproductionUser_Profile/>
+                            </Route>
+                            <Route path="/ContentproductionUser/Make">
+                                <BaaHam_ContentproductionUser_Make/>
+                            </Route>
+
+                        </Switch>
                     
                     </div>
                 </div>

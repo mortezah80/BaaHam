@@ -14,6 +14,8 @@ import Image2 from '../../../pic2.png'
 import UserImage from '../../../user.png'
 import FooterImage from '../../../Footer.jpg'
 import {IoExitOutline} from 'react-icons/io5'
+import {Switch , Route , BrowserRouter as Router ,  Link} from 'react-router-dom';
+
 
 
 function BaaHam_MarketerUser() {
@@ -24,9 +26,10 @@ function BaaHam_MarketerUser() {
         <div className='BaaHam_NormalUsersContentContainer'>
             <div className='BaaHam_NormalUsersContenttransparent'>
                 <div className='BaaHam_NormalUsersContent'>
+             
                     <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
-                            <div className='BaaHam_NUContentSideBarUserPicture BaaHam_MUContentSideBarUserPicture'>
+                            <div className='BaaHam_NUContentSideBarUserPicture'>
                                 <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
@@ -37,46 +40,52 @@ function BaaHam_MarketerUser() {
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <CgProfile/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span>
+                            <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/MarketerUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <MdOutlineEditNote/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span>
+                            <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/MarketerUser/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
+                            
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(3)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <MdManageSearch/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>اطلاعات تکمیلی </span>
+                            <Link className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/MarketerUser/Information"><span className='BaaHam_NUContentSideBarOptionTitle'>اطلاعات تکمیلی </span></Link>
+                            
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===4 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(4)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <GiClick/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>معرفی کاربر </span>
+                            <Link className={['BaaHam_NULink' , sidebar===4 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/MarketerUser/Introduction"><span className='BaaHam_NUContentSideBarOptionTitle'> معرفی کاربر</span></Link>
+                        
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===5 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(5)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
-                            <GiClick/>
+                            <RiFileListLine/>
                             </div>
-                            <span className='BaaHam_NUContentSideBarOptionTitle'>نقدینگی  </span>
+                            <Link className={['BaaHam_NULink' , sidebar===5 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/MarketerUser/Money"><span className='BaaHam_NUContentSideBarOptionTitle'>نقدینگی  </span></Link>
+                            
                             </div>
+  
                             <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
-                                <div className='BaaHam_NUContentSideBarUserExitButton'>
-                                    <IoExitOutline/>
-                                </div> 
-                                <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                            <div className='BaaHam_NUContentSideBarUserExitButton'>
+                                <IoExitOutline/>
+                            </div> 
+                            <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
                             </div>
                         </div>
+                
                     </div>
                     <div className='BaaHam_NUContentForm'>
                         <div className='BaaHam_NUContentFormHeader'>
                             <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر بازاریاب</span>
                         </div>
                         
-                        {  
+                        {  /*
                         sidebar===1 ?
                         <BaaHam_MarketerUser_Profile/>
                         :
@@ -103,7 +112,24 @@ function BaaHam_MarketerUser() {
                         :
                         <BaaHam_NormalUsers_Favorites/>*/
                         }
-                    
+                        <Switch>
+                            <Route exact path="/MarketerUser/Profile">
+                                <BaaHam_MarketerUser_Profile/>
+                            </Route>
+                            <Route path="/MarketerUser/SabteAgahi">
+                                <BaaHam_MarketerUser_SabteAgahi/>
+                            </Route>
+                            <Route path="/MarketerUser/Information">
+                                <BaaHam_MarketerUser_Information/>
+                            </Route>
+                            <Route path="/MarketerUser/Money">
+                                <BaaHam_MarketerUser_Money/>
+                            </Route>
+                            <Route path="/MarketerUser/Introduction">
+                                <BaaHam_MarketerUser_Introduction/>
+                            </Route>
+                
+                        </Switch>
                     </div>
                 </div>
                 <div className='BaaHamMainFooterContainer'>

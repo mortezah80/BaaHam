@@ -8,6 +8,9 @@ body {
   direction: rtl;
   background-color: rgb(245, 245, 245);
 }
+span {
+  text-align: right;
+}
 
 @font-face {
   font-family: IRANYekan;

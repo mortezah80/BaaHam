@@ -29,3 +29,8 @@
     width: 936px;
     object-fit: contain;
 }
+
+
+.BaaHam_NormalUsersHeaderTopContainer {
+    display: none !important;
+}

@@ -6,6 +6,9 @@ import SwitchUnstyled, { switchUnstyledClasses } from '@mui/base/SwitchUnstyled'
 import Select from 'react-select'
 import { useMediaQuery } from 'react-responsive'
 import image1 from '../../../../pic1.jpg'
+import {BiImageAdd} from 'react-icons/bi'
+
+
 
 const blue = {
   500: '#007FFF',
@@ -88,20 +91,47 @@ const Root = styled('span')(
 
 
 function BaaHam_NormalUsers_SabteAgahi() {
+  const [ImageSrcs , setImageSrc] = useState([]);
+  const HandlesetImageSrc = (e) => {
+    let temp = ImageSrcs;
+    temp.push(e);
+    setImageSrc(temp);
+  }
+  
+
+  const q1380 = useMediaQuery({ query: '(max-width: 1380px)' })
+  const q1230 = useMediaQuery({ query: '(max-width: 1230px)' })
+  const q920 = useMediaQuery({ query: '(max-width: 920px)' })
+  const q775 = useMediaQuery({ query: '(max-width: 775px)' })
+  const q715 = useMediaQuery({ query: '(max-width: 715px)' })
+  let fontSizeRes = "13px";
+  let selectWidth ="275px"
+  if (q1380) {
+    selectWidth = "245px"
+  }
+
+
+  if (q1230) {
+    selectWidth = "200px"
+  }
+  if (q920) {
+    fontSizeRes="11px"
+  }
+  if (q775 ) {
+    fontSizeRes = "9.5px"
+  }
+  if (q715 ) {
+    fontSizeRes = "11px"
+  }
   const res500 = useMediaQuery({ query: '(max-width: 500px)' })
   const res600 = useMediaQuery({ query: '(max-width: 600px)' })
   const res700 = useMediaQuery({ query: '(max-width: 700px)' })
   const [AgahiSwitch, setAgahiSwitch] = useState(1);
   let selectHeight = "36px";
   if (res700) {
-      selectHeight = "33px"
+      selectHeight = "30px"
   }
-  if (res600) {
-      selectHeight = "27px"
-  }
-  if (res500) {
-      selectHeight = "23px"
-  }
+
 const customStyles = {
   
   control: (base, state) => ({
@@ -143,9 +173,9 @@ const customStyles = {
     ...provided,
     height: selectHeight,
     padding: '0 6px',
-    paddingBottom:'5px',
+
     display:'flex',
-    fontSize:'13px',
+    fontSize:fontSizeRes,
     color: 'rgb(178, 178, 178)',
     fontWeight : 'bold'
   }),
@@ -260,6 +290,25 @@ const customStyles = {
             <span>انتخاب محدوده ملک روی نقشه</span>
           </div>
         </div>
+        <div className='BaaHam_NU_SabteAgahiPicsBigContainer'>         
+          <span className='BaaHam_NormalUsers_SabteAgahiAreaSelectTitle'>عکس آگهی</span>
+          <span className='BaaHam_NormalUsers_SabteAgahiTitle1 BaaHam_NU_SabteAgahiPicsTitle'>عکس هایی از داخل و بیرون ملک اضافه کنید.آگهی های دارای عکس تا ((3 برابر)) بیشتر توسط کاربران دیده میشوند.</span>
+          <div className="BaaHam_NU_SabteAgahiPicsContainer">
+
+              <div className="waitforimage">
+              <input className="imageInput" id="Imageinput" type="file" onChange = {(e) => setImageSrc([...ImageSrcs,URL.createObjectURL(e.target.files[0])])} />
+              <label className="ImageInputLabel" htmlFor="Imageinput"><BiImageAdd /></label>             
+              </div>
+              {ImageSrcs.map((ImageSrc) => {
+                  return (
+                      <img className="BaaHam_NU_SabteAgahiPic" alt="" src={ImageSrc} />      
+                      )   
+                } )
+              }
+          
+          </div>
+          <span className='BaaHam_NormalUsers_SabteAgahiTitle1 BaaHam_NU_SabteAgahiPicsTitle'> تعداد عکس های انتخاب شده نباید بیشتر از 20 باشد.</span>
+        </div>
         <div className='BaaHam_NU_SabteAgahiBottomGrids'>
             <div className='BaaHam_NU_SabteAgahiBottomGrid'>
               <span className='BaaHam_NU_SabteAgahiBottomGridTitle'>متراژ</span>
@@ -267,23 +316,25 @@ const customStyles = {
             </div>
             <div className='BaaHam_NU_SabteAgahiDahandeContainer'>
               <span className='BaaHam_NU_SabteAgahiDahandeContinerTitle'>آگهی دهنده :</span>
-              <div className='BaaHam_NU_SabteAgahiDahande'>
-                <div className={['BaaHam_NU_SabteAgahiDahandeCircle ',AgahiSwitch===1? "BaaHam_NU_SabteAgahiDahandeCircleActive" : ""].join(" ")} onClick={() => setAgahiSwitch(1)}>
-                  <div className={['BaaHam_NU_SabteAgahiDahandeCircleIn BaaHam_NU_SabteAgahiDahandeCircleInExact',AgahiSwitch===1?'BaaHam_NU_SabteAgahiDahandeCircleInActive' : ""].join(" ")}></div>
+              <div className='BaaHam_NU_SabteAgahiDahandeContainerRes'>
+                <div className='BaaHam_NU_SabteAgahiDahande BaaHam_NU_SabteAgahiDahandeRes'>
+                  <div className={['BaaHam_NU_SabteAgahiDahandeCircle ',AgahiSwitch===1? "BaaHam_NU_SabteAgahiDahandeCircleActive" : ""].join(" ")} onClick={() => setAgahiSwitch(1)}>
+                    <div className={['BaaHam_NU_SabteAgahiDahandeCircleIn BaaHam_NU_SabteAgahiDahandeCircleInExact',AgahiSwitch===1?'BaaHam_NU_SabteAgahiDahandeCircleInActive' : ""].join(" ")}></div>
+                  </div>
+                  <div className='BaaHam_NU_SabteAgahiDahandeTitle'>
+                    <span >شخصی</span>
+                  </div>
+      
                 </div>
-                <div className='BaaHam_NU_SabteAgahiDahandeTitle'>
-                  <span >شخصی</span>
-                </div>
-    
-              </div>
-              <div className='BaaHam_NU_SabteAgahiDahande'>
-                <div className={['BaaHam_NU_SabteAgahiDahandeCircle',AgahiSwitch===2? "BaaHam_NU_SabteAgahiDahandeCircleActive" : ""].join(" ")} onClick={() => setAgahiSwitch(2)}>
-                  <div className={['BaaHam_NU_SabteAgahiDahandeCircleIn',AgahiSwitch===2?'BaaHam_NU_SabteAgahiDahandeCircleInActive' : ""].join(" ")}></div>
-                </div>
-                <div className='BaaHam_NU_SabteAgahiDahandeTitle'>
-                  <span >مشاور املاک</span>
-                </div>
+                <div className='BaaHam_NU_SabteAgahiDahande'>
+                  <div className={['BaaHam_NU_SabteAgahiDahandeCircle',AgahiSwitch===2? "BaaHam_NU_SabteAgahiDahandeCircleActive" : ""].join(" ")} onClick={() => setAgahiSwitch(2)}>
+                    <div className={['BaaHam_NU_SabteAgahiDahandeCircleIn',AgahiSwitch===2?'BaaHam_NU_SabteAgahiDahandeCircleInActive' : ""].join(" ")}></div>
+                  </div>
+                  <div className='BaaHam_NU_SabteAgahiDahandeTitle'>
+                    <span >مشاور املاک</span>
+                  </div>
 
+                </div>
               </div>
             </div>
             <div className='BaaHam_NU_SabteAgahiBottomGrid'>
@@ -331,18 +382,18 @@ const customStyles = {
           <span>انتخاب سایر ویژگی ها و امکانات</span>
         </div>
         <div className='BaaHam_NU_SabteAgahiBottomGrid'>
-              <span className='BaaHam_NU_SabteAgahiBottomGridTitle' >شماره موبایل</span>
+              <span className='BaaHam_NU_SabteAgahiBottomGridTitle BaaHam_NU_SabteAgahiBottomGridTitleExact' >شماره موبایل</span>
               <span className='BaaHam_NU_SabteAgahiBottomGridDescribe'>کد تایید به شماره موبایل شما ارسال خواهد شد. تماس و چت نز با این شماره انجام می شود.</span>
               <span className='BaaHam_NU_SabteAgahiBottomGridDescribe'>توجه: لطفا پس از ثبت آگهی، به پشامک های پرداخت وجه بی اعتنا باشید.</span>
               <input className='BaaHam_NU_SabteAgahiBottomGridInput2'></input>
         </div>
         <div className='BaaHam_NU_SabteAgahiBottomGrid'>
-          <span className='BaaHam_NU_SabteAgahiBottomGridTitle'>عنوان آگهی</span>
+          <span className='BaaHam_NU_SabteAgahiBottomGridTitle BaaHam_NU_SabteAgahiBottomGridTitleExact'>عنوان آگهی</span>
           <span className='BaaHam_NU_SabteAgahiBottomGridDescribe'>در عنوان آگهی به موادر مهمی مانند نوع ملک، متراژ و محله اشاره کنید</span>
           <input className='BaaHam_NU_SabteAgahiBottomGridInput2'></input>
         </div>
         <div className='BaaHam_NU_SabteAgahiBottomGrid'>
-              <span className='BaaHam_NU_SabteAgahiBottomGridTitle'>توضیحات آگهی</span>
+              <span className='BaaHam_NU_SabteAgahiBottomGridTitle BaaHam_NU_SabteAgahiBottomGridTitleExact'>توضیحات آگهی</span>
               <span className='BaaHam_NU_SabteAgahiBottomGridDescribe'>در توضیحات آگهی به مواردی مانند شرایط اجاره، جزئیات و ویژگی های قابل توجه، تسترسی های مجلی و موقعیت قرارگیری ملک اشاره کنید.</span>
               <textarea  className='BaaHam_NU_ProfileTextArea' />
         </div>
