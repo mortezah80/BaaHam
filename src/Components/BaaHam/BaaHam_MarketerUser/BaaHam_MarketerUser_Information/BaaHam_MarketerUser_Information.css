@@ -26,14 +26,16 @@
 }
 .BaaHam_MU_InformationInputsContainer {
     display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    width: 96.5%;
     justify-content: space-between;
     margin-top:20px;
+    column-gap: 30px;
 }
 .BaaHam_MU_ProfileTextAreaContainer {
     margin-top:20px !important;
 }
+
 .BaaHam_MU_SabteAgahiAreaSelect {
  
     background-color: red;
@@ -41,10 +43,10 @@
 .BaaHam_NU_ProfileInputsContainer {
 }
 .BaaHam_MU_ProfileInputsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top:20px;
+    column-gap: 30px;
 }
 .BaaHam_MU_SabteAgahiAreaSelectTitle {
     margin:0px;
@@ -105,4 +107,65 @@
     background-color: rgb(245, 245, 245);
     border-radius: 17px;
     margin-top:6px;
+}
+
+
+@media screen and (max-width : 880px) {
+    .BaaHam_NU_ProfileInputsContainer {
+        column-gap: 30px;
+    }
+    .BaaHam_MU_InformationInputsContainer {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+
+        width: 96.5%;
+    }
+    .BaaHam_NU_ProfileInputContainer3MURes {
+        width: 100% !important;
+        column-gap: 40px;
+        
+    }
+    .BaaHam_NU_ProfileInputContainer {
+        margin:0px !important;
+    }
+    .BaaHam_MU_InformationInput2 {
+        width: 100% !important;
+        margin-right:0px;
+    }
+    .BaaHam_MU_InformationInputContainer {
+        margin:0px !important;
+
+    }
+    .BaaHam_NU_ProfileInputContainer3 {
+    }
+    .BaaHam_MU_ProfileInputsContainer {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+    .BaaHam_MU_InformationInput1 {
+        width: 100% !important;
+    }
+    .BaaHam_MU_ProfileInput3 {
+        width: 96% !important;
+    }
+    .BaaHam_MU_InformationFooterContainer {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width : 540px) {
+    .BaaHam_NU_ProfileInputContainer3MURes2 {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        row-gap: 10px;
+    }
+    .BaaHam_MU_InformationLabelContainer {
+
+    }
+    .BaaHam_MU_InformationFooterContainer {
+       padding-right:10px;
+    }
+    .BaaHam_MU_InformationButtonContainer {
+        padding-right:10px;
+    }
 }

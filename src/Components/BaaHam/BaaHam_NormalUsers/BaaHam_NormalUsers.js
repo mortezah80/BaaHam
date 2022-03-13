@@ -155,9 +155,9 @@ function BaaHam_NormalUsers() {
                    
                 </div>
              </div>
-             {/*<div className='BaaHamMainFooterContainer'>
+             <div className='BaaHamMainFooterContainer'>
                 <img alt="hi" src={FooterImage} className="BaaHamMainFooter"/>        //Footer
-                  </div>*/}
+              </div>
           </div>   
    
         </div>

@@ -34,3 +34,9 @@
 .BaaHam_NormalUsersHeaderTopContainer {
     display: none !important;
 }
+
+
+
+.BaaHamMainFooterContainer {
+    display: none;
+}

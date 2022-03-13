@@ -10,14 +10,9 @@ function BaaHam_MarketerUser_Information() {
     const res700 = useMediaQuery({ query: '(max-width: 700px)' })
     let selectHeight = "40px";
     if (res700) {
-        selectHeight = "33px"
+        selectHeight = "40px"
     }
-    if (res600) {
-        selectHeight = "27px"
-    }
-    if (res500) {
-        selectHeight = "23px"
-    }
+
     const optionsList1 = [
         { label: 'Option 1', value: 'Option 1'},
         { label: 'Option 2', value: 'Option 2'},
@@ -64,8 +59,8 @@ function BaaHam_MarketerUser_Information() {
         valueContainer: (provided, state) => ({
             ...provided,
             height: selectHeight,
-            padding: '0 6px',
-            paddingBottom:'5px',
+     
+        
             display:'flex',
             fontSize:'13px',
             color: 'rgb(178, 178, 178)',
@@ -107,15 +102,17 @@ function BaaHam_MarketerUser_Information() {
   return (
     <div className='BaaHam_MarketerUser_Information'>
         <div className='BaaHam_MU_InformationInputsContainer'>
-            <div className='BaaHam_NU_ProfileInputContainer3'>
+            <div className='BaaHam_NU_ProfileInputContainer3 BaaHam_NU_ProfileInputContainer3MURes'>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer'>
                     <span className='BaaHam_NU_ProfileInputTitle'>تلفن ثابت</span>
-                    <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput1' type="text" />
+                    <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput1 ' type="text" />
                 </div>
-                <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer'>
-                    <span className='BaaHam_NU_ProfileInputTitle BaaHam_MU_InformationInputTitle'>کد شهر </span>
-                    <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput2' type="text" />
+                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer'>
+                    <span className='BaaHam_NU_ProfileInputTitle BaaHam_MU_InformationInputTitle '>کد شهر </span>
+                    <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput2 ' type="text" />
                 </div>
+              
+        
             </div>
    
             <div className='BaaHam_NU_ProfileInputContainer '>
@@ -129,8 +126,8 @@ function BaaHam_MarketerUser_Information() {
         </div>
         <div className='BaaHam_MU_ProfileInputsContainer'>
             <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_ProfileInputsContainerFlex'>
-                <span className='BaaHam_NU_ProfileInputTitle'>نام</span>
-                <input className='BaaHam_NU_ProfileInput BaaHam_MU_ProfileInput3' type="text" />
+                <span className='BaaHam_NU_ProfileInputTitle '>نام</span>
+                <input className='BaaHam_NU_ProfileInput BaaHam_MU_ProfileInput3 ' type="text" />
             </div>
             <div className='BaaHam_MU_Information_ChooseBankContainer'>
                 <span className='BaaHam_NU_ProfileInputTitle'>نام بانک</span>
@@ -147,7 +144,7 @@ function BaaHam_MarketerUser_Information() {
             </div>
         </div>
         <div className='BaaHam_MU_InformationInputsContainer'>
-            <div className='BaaHam_NU_ProfileInputContainer3'>
+            <div className='BaaHam_NU_ProfileInputContainer3 BaaHam_NU_ProfileInputContainer3MURes'>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer'>
                     <span className='BaaHam_NU_ProfileInputTitle'>نام شعبه </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput1' type="text" />
@@ -164,7 +161,7 @@ function BaaHam_MarketerUser_Information() {
             </div>
         </div>
         <div className='BaaHam_MU_InformationInputsContainer BaaHam_MU_InformationInputsContainer4'>
-            <div className='BaaHam_NU_ProfileInputContainer3'>
+            <div className='BaaHam_NU_ProfileInputContainer3 BaaHam_NU_ProfileInputContainer3MURes BaaHam_NU_ProfileInputContainer3MURes2'>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer4_1'>
                     <span className='BaaHam_NU_ProfileInputTitle'>شماره حساب </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput4_1' type="text" />
@@ -183,7 +180,7 @@ function BaaHam_MarketerUser_Information() {
                 </div>
             </div>
         </div>
-        <div className='BaaHam_NU_ProfileButtonContainer'>
+        <div className='BaaHam_NU_ProfileButtonContainer BaaHam_MU_InformationButtonContainer'>
             <div className='BaaHam_NU_ProfileButton'>
                 <span>ثبت</span>
             </div>

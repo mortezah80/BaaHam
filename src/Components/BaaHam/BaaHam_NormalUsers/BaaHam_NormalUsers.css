@@ -259,7 +259,7 @@
 
 }
 .BaaHam_NUContentSideBarUserName3 {
-    display: none;
+    display: none !important;
 }
 .BaaHam_NUContentSideBarUserName2 {
     flex:0.27;
@@ -310,10 +310,12 @@
     align-items: center;
     justify-content: space-between;
     margin:auto;
-    height: 70px;
+
     border-bottom: 2px solid rgb(245, 245, 245);
 }
-
+.BaaHam_NUContentFormHeaderSliderIcon {
+    margin:0px ;
+}
 .LinksTopHeaderContent_Icon {
     font-size: 22px;
     cursor: pointer;
@@ -422,7 +424,7 @@
         display: none;
     }
     .BaaHam_NUContentSideBarUserName3 {
-        display: inline;
+        display: inline !important;
         margin-top:10px;
     }
     .BaaHam_NUContentFormUserImageContainer {

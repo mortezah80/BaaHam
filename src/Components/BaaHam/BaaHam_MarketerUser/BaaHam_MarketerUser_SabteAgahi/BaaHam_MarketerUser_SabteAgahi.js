@@ -6,6 +6,8 @@ import SwitchUnstyled, { switchUnstyledClasses } from '@mui/base/SwitchUnstyled'
 import Select from 'react-select'
 import { useMediaQuery } from 'react-responsive'
 import image1 from '../../../../pic1.jpg'
+import {BiImageAdd} from 'react-icons/bi'
+
 
 const blue = {
   500: '#007FFF',
@@ -91,6 +93,7 @@ const Root = styled('span')(
   
 
 function BaaHam_MarketerUser_SabteAgahi() {
+  const [ImageSrcs , setImageSrc] = useState([]);
     const res500 = useMediaQuery({ query: '(max-width: 500px)' })
     const res600 = useMediaQuery({ query: '(max-width: 600px)' })
     const res700 = useMediaQuery({ query: '(max-width: 700px)' })
@@ -265,6 +268,25 @@ function BaaHam_MarketerUser_SabteAgahi() {
           <div className='BaaHam_NormalUsers_SabteAgahiAreaMapContainer'>
             <span>انتخاب محدوده ملک روی نقشه</span>
           </div>
+        </div>
+        <div className='BaaHam_NU_SabteAgahiPicsBigContainer'>         
+          <span className='BaaHam_NormalUsers_SabteAgahiAreaSelectTitle'>عکس آگهی</span>
+          <span className='BaaHam_NormalUsers_SabteAgahiTitle1 BaaHam_NU_SabteAgahiPicsTitle'>عکس هایی از داخل و بیرون ملک اضافه کنید.آگهی های دارای عکس تا ((3 برابر)) بیشتر توسط کاربران دیده میشوند.</span>
+          <div className="BaaHam_NU_SabteAgahiPicsContainer">
+
+              <div className="waitforimage">
+              <input className="imageInput" id="Imageinput" type="file" onChange = {(e) => setImageSrc([...ImageSrcs,URL.createObjectURL(e.target.files[0])])} />
+              <label className="ImageInputLabel" htmlFor="Imageinput"><BiImageAdd /></label>             
+              </div>
+              {ImageSrcs.map((ImageSrc) => {
+                  return (
+                      <img className="BaaHam_NU_SabteAgahiPic" alt="" src={ImageSrc} />      
+                      )   
+                } )
+              }
+          
+          </div>
+          <span className='BaaHam_NormalUsers_SabteAgahiTitle1 BaaHam_NU_SabteAgahiPicsTitle'> تعداد عکس های انتخاب شده نباید بیشتر از 20 باشد.</span>
         </div>
         <div className='BaaHam_NU_SabteAgahiBottomGrids'>
             <div className='BaaHam_NU_SabteAgahiBottomGrid'>

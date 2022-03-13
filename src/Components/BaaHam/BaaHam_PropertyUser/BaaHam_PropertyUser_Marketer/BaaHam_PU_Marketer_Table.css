@@ -36,6 +36,8 @@
     width: 98%;
     align-items: center;
     margin-top:6px;
+    text-align: center;
+    
 }
 .BaaHam_PU_Marketer_TableContent {
     width: 25%;
@@ -43,6 +45,7 @@
     font-size:13px;
     font-weight: bold;
     color: rgb(52, 52, 52);
+    text-align: center;
 }
 
 .BaaHam_PU_Marketer_TableContentFirst {
