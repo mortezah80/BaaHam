@@ -1,3 +1,8 @@
+.BaaHam_NormalUsers_Checks {
+    width: 100%;
+}
+
+
 .BaaHam_NormalUsers_ChecksHeader {
     display: flex;
     align-items: center;
@@ -21,7 +26,7 @@
     padding-left:40px;
 }
 .BaaHam_NormalUsers_ChecksLeftInput {
-    flex:0.5;
+    flex:0.48;
 
 }
 .BaaHam_NU_SabteAgahiBottomGridCheck2 {

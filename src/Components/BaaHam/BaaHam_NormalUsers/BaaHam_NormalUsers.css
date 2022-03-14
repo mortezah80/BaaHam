@@ -478,13 +478,17 @@
     .BaaHam_NUContentSideBar {
         display: none;
     }
+    .BaaHam_NUContentForm {
+        flex:1 !important;
+        padding:0px 10px !important;
+        margin:0px;
+        align-items: center;
+
+    }
     .LinksTopHeaderContent_Icon {
         display: inline;
     }
-    .BaaHam_NUContentForm {
-        flex:1;
-        margin-right:40px;
-    }
+
     .BaaHam_NUContentFormHeader {
 
     }
@@ -532,6 +536,7 @@
     }
 
 }
+
 @media screen and (max-width : 707px) {
     .BaaHam_NUContentSideBarUserName2 {
         font-size: 12px;
@@ -555,6 +560,11 @@
         top:-130px;
     }
 
+}
+@media screen and (max-width : 700px) {
+    .BaaHam_NormalUsersContenttransparent {
+        top:-10px;
+    }
 }
 @media screen and (max-width : 625px) {
     .BaaHam_NormalUsersContent {

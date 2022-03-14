@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: right;
     margin-top:27px;
-    flex-wrap: wrap;
+
     row-gap: 10px;
+
 }
 .BaaHam_MU_IntroductionTableRow {
     width: 7%;
@@ -45,4 +46,9 @@
 .BaaHam_MU_IntroductionTableItemContent {
     padding: 8px 0px;
     font-weight: bold;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+

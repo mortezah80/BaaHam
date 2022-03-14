@@ -1,4 +1,8 @@
 
+
+.BaaHam_NormalUsers_SabteAgahi {
+    width: 100%;
+}
 .BaaHam_NU_SabteAgahiTopGrid {
     width: 100%;
     display: grid;
@@ -439,16 +443,13 @@
     }
 }
 @media screen and (max-width : 704px) {
-    .BaaHam_NU_SabteAgahiFooter3Last3 {
-        justify-content: center;
-    }
+
     .BaaHam_NormalUsers_SabteAgahiAreaMapContainer {
 
         font-size: 10px;
     }
 }
 @media screen and (max-width : 450px) {
-
     .BaaHam_NU_SabteAgahiDahandeContainerRes {
         flex-direction: column;
     }
@@ -457,3 +458,8 @@
     }
 }
 
+@media screen and (max-width : 420px) {
+    .BaaHam_NU_SabteAgahiFooter3Last3 {
+        justify-content: center;
+    }
+}

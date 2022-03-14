@@ -1,3 +1,6 @@
+
+
+
 .BaaHam_NU_ProfileInputsContainer {
 
     display: grid;
@@ -7,8 +10,13 @@
     padding-top:30px;
     column-gap: 50px;
     width: 96.5%;
+    position: relative;
 }
 .BaaHam_NormalUsers_Profile {
+
+    width: 100%;
+    position: relative;
+    padding-left:4px;
 }
 .BaaHam_NU_ProfileInputContainer {
     display: flex;
@@ -25,7 +33,7 @@
 }
 .BaaHam_NU_ProfileInput {
     margin-top:7px;
-    width: 100%;
+    width: 95%;
     border: none;
     outline: none;
     background-color: rgb(245, 245, 245);
@@ -41,7 +49,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin:auto;
     margin-top:40px;
+    width: 96.5%;
+
 }
 .BaaHam_NU_ProfileTextArea {
     margin-top:7px;
