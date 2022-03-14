@@ -41,3 +41,25 @@
     border-top:1px solid rgb(245, 245, 245);
     margin-top:50px;
 }
+
+
+@media screen and (max-width : 970px) {
+    .BaaHam_PU_MarketerInputPercentContainer {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .BaaHam_PU_MarketerInput {
+        width: 50%;
+        margin-right:10px;
+        margin-left:-9px;
+    }
+
+    
+}
+
+@media screen and (max-width :400px) {
+    .BaaHam_PU_MarketerInputTitle {
+        font-size: 9px;
+       
+    }
+}

@@ -26,6 +26,7 @@ function BaaHam_MarketerUser_Introduction() {
         </div>
         <div className='BaaHam_MU_IntroductionTables'>
             <BaaHam_MU_IntroductionTable TableNumber={1}/>
+            <BaaHam_MU_IntroductionTable TableNumber={2}/>
         </div>
 
     </div>

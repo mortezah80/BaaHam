@@ -12,12 +12,20 @@ import BaaHam_NormalUsers_Requests from './BaaHam_NormalUsers_Requests/BaaHam_No
 import BaaHam_NormalUsers_AgahihayeMan from './BaaHam_NormalUsers_AgahihayeMan/BaaHam_NormalUsers_AgahihayeMan'
 import BaaHam_NormalUsers_Favorites from './BaaHam_NormalUsers_Favorites/BaaHam_NormalUsers_Favorites'
 import Image2 from '../../../pic2.png'
+import Image3 from '../../../pic3.jpg'
+import Image4 from '../../../pic4.jpg'
+import Image5 from '../../../pic5.jpg'
 import UserImage from '../../../user.png'
 import {IoExitOutline} from 'react-icons/io5'
 import FooterImage from '../../../Footer.jpg'
 import {Switch , Route , BrowserRouter as Router ,  Link} from 'react-router-dom';
 import {HiMenu} from 'react-icons/hi'
 import Drawer from '@mui/material/Drawer';
+import {BsTwitter,BsTelegram ,BsFillArrowUpCircleFill} from 'react-icons/bs'
+import {IoLogoLinkedin} from 'react-icons/io'
+import {AiFillInstagram} from 'react-icons/ai'
+import {FaTelegramPlane} from 'react-icons/fa'
+
 
 
 function BaaHam_NormalUsers() {
@@ -156,7 +164,81 @@ function BaaHam_NormalUsers() {
                 </div>
              </div>
              <div className='BaaHamMainFooterContainer'>
-                <img alt="hi" src={FooterImage} className="BaaHamMainFooter"/>        //Footer
+                  <div className='BaaHamMainFooterContainer2'>
+
+                 
+                    <span className='BaaHamMainFooterRightAboutUs'>درباره ما</span>
+                    <div className='BaaHamMainFooter'>
+                        <div className='BaaHamMainFooterRight'>
+                              <span className='BaaHamMainFooterRightAboutUsContent'>توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد.توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد.توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد</span>
+                              <div className='BaaHam_NormalUsersHeaderTopRight'>
+                              <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                                <img className='BaaHam_NormalUsersHeaderImage' src={Image3} alt="hi"/>
+                                </div>
+                                <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+                              </div>
+                        </div>
+                        <div className='BaaHamMainFooterCenter'>
+                          <span className='BaaHam_NormalUsersHeaderCenterTitle BaaHam_NormalUsersFooterCenterTitle BaaHam_NormalUsersFooterCenterTitleNoMargin'>خدمات</span>
+                          <span className='BaaHam_NormalUsersHeaderCenterTitle BaaHam_NormalUsersFooterCenterTitle'>درباره ما</span>
+                          <span className='BaaHam_NormalUsersHeaderCenterTitle BaaHam_NormalUsersFooterCenterTitle'>تماس با ما</span>
+                        </div>
+                        <div className='BaaHamMainFooterLeft'>
+                          <div className='BaaHam_NormalUsersFooterImage2Container'>
+                            <img className='BaaHam_NormalUsersFooterImage2' src={Image4} alt="hi"/>
+                            <img className='BaaHam_NormalUsersFooterImage2' src={Image5} alt="hi"/>
+                          </div>
+                          <div className='BaaHamMainFooterLeftIconsContainer'>
+                            <BsTwitter/>
+                            <IoLogoLinkedin/>
+                            <FaTelegramPlane/>
+                            <AiFillInstagram/>
+                            <BsFillArrowUpCircleFill className='BaaHamMainFooterLeftIconLast'/>
+                          </div>
+                        </div>
+                    </div>
+
+
+                <div className='BaaHamMainFooter2Big'>
+
+             
+                    <div className='BaaHamMainFooter2'>
+                     
+                        <div className='BaaHamMainFooterRight BaaHamMainFooterRight2'>
+                              <span className='BaaHamMainFooterRightAboutUsContent'>توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد.توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد.توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد</span>
+                          
+                        </div>
+                        <div className='BaaHamMainFooter2RightCenter'>
+                              <div className='BaaHamMainFooterCenter BaaHamMainFooterCenter2'>
+                                <span className='BaaHam_NormalUsersHeaderCenterTitle BaaHam_NormalUsersFooterCenterTitle BaaHam_NormalUsersFooterCenterTitleNoMargin'>خدمات</span>
+                                <span className='BaaHam_NormalUsersHeaderCenterTitle BaaHam_NormalUsersFooterCenterTitle BaaHam_NormalUsersFooterCenterTitleNoMargin'>درباره ما</span>
+                                <span className='BaaHam_NormalUsersHeaderCenterTitle BaaHam_NormalUsersFooterCenterTitle BaaHam_NormalUsersFooterCenterTitleNoMargin'>تماس با ما</span>
+                              </div>
+                          
+                            <div className='BaaHamMainFooterLeft'>
+                                <div className='BaaHam_NormalUsersFooterImage2Container BaaHam_NormalUsersFooterImage2ContainerRes'>
+                                  <img className='BaaHam_NormalUsersFooterImage2' src={Image4} alt="hi"/>
+                                  <img className='BaaHam_NormalUsersFooterImage2' src={Image5} alt="hi"/>
+                                </div>
+                                <div className='BaaHamMainFooterLeftIconsContainer'>
+                                  <BsTwitter/>
+                                  <IoLogoLinkedin/>
+                                  <FaTelegramPlane/>
+                                  <AiFillInstagram/>
+                                  <BsFillArrowUpCircleFill className='BaaHamMainFooterLeftIconLast'/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className='BaaHam_NormalUsersHeaderTopRight'>
+                              <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                                <img className='BaaHam_NormalUsersHeaderImage' src={Image3} alt="hi"/>
+                                </div>
+                                <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+                              </div>
+                    </div>
+                  </div> 
               </div>
           </div>   
    
@@ -221,3 +303,5 @@ function BaaHam_NormalUsers() {
 }
 
 export default BaaHam_NormalUsers
+
+

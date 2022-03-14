@@ -19,7 +19,7 @@ function BaaHam() {
     <div className='BaaHam'>
         <div className='BaaHam_NormalUsersHeader'>
           <div className='BaaHam_NormalUsersHeaderTopContainerWhite'>
-            <div className='BaaHam_NormalUsersHeaderTopContainer'>
+            <div className='BaaHam_NormalUsersHeaderTopContainer '>       
               <div className='BaaHam_NormalUsersHeaderTopRight'>
                 <div className='BaaHam_NormalUsersHeaderImageContainer'>
                 <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
@@ -40,6 +40,39 @@ function BaaHam() {
            
               </div>
             </div>
+
+
+
+            <div className='BaaHam_NormalUsersHeaderTopContainerRes'>
+
+              <div className='BaaHam_NormalUsersHeaderTopRightCenter'>
+                   
+                  <div className='BaaHam_NormalUsersHeaderTopRight'>
+                    <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                    <img className='BaaHam_NormalUsersHeaderImage' src={Image2} alt="hi"/>
+                    </div>
+                    <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>
+                  </div>
+                  <div className='BaaHam_NormalUsersHeaderCenter'>
+                    <span className='BaaHam_NormalUsersHeaderCenterTitle'>خدمات</span>
+                    <span className='BaaHam_NormalUsersHeaderCenterTitle'>درباره ما</span>
+                    <span className='BaaHam_NormalUsersHeaderCenterTitle'>تماس با ما</span>
+                  </div>
+              </div> 
+
+              <div className='BaaHam_NormalUsersHeaderLeft2'>
+                <span className='BaaHam_NormalUsersHeaderLeftTitle'>ورود/ثبت نام</span>
+            
+                      <div className='BaaHam_NU_ProfileButton'>
+                          <span>ثبت</span>
+                      </div>
+           
+              </div>
+            </div>
+
+
+
+
           </div>
           <div className='BaaHam_NormalUsersHeaderImageContainer'>
               <img alt="hi" src={BackgroundImage} className="BaaHam_NormalUsersHeaderImageContainerImage" />

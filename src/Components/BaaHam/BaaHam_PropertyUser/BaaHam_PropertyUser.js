@@ -13,11 +13,15 @@ import UserImage from '../../../user.png'
 import FooterImage from '../../../Footer.jpg'
 import {IoExitOutline} from 'react-icons/io5'
 import {Switch , Route , BrowserRouter as Router ,  Link} from 'react-router-dom';
+import {HiMenu} from 'react-icons/hi'
+import Drawer from '@mui/material/Drawer';
+
 
 
 
 
 function BaaHam_PropertyUser() {
+  const [DP_DrawerB,setDP_DrawerB] = useState(false)
     const [sidebar ,Setsidebar] = useState(1)
   return (
     <div className='BaaHam_NormalUsers'>
@@ -27,8 +31,8 @@ function BaaHam_PropertyUser() {
         <div className='BaaHam_NormalUsersContent'>
         <div className='BaaHam_NUContentSideBar'>
               <div className='BaaHam_NUContentSideBarUser'>
-                  <div className='BaaHam_NUContentSideBarUserPicture'>
-                      <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
+                  <div className='BaaHam_NUContentSideBarUserPicture BaaHam_PUContentSideBarUserPicture'>
+                      <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf ' />
                   </div>
                   <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
                   <span className='BaaHam_NUContentSideBarUserEmail'>Example@gmail.com</span>
@@ -95,9 +99,29 @@ function BaaHam_PropertyUser() {
       
           </div>
             <div className='BaaHam_NUContentForm'>
-                <div className='BaaHam_NUContentFormHeader'>
-                    <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر املاک</span>
-                </div>
+            <div className='BaaHam_NUContentFormUserImageContainer'>
+                      <div className='BaaHam_NUContentSideBarUser2'>
+                        <span className='BaaHam_NUContentSideBarUserName BaaHam_NUContentSideBarUserName2'>نام کاربری</span>
+                          <div className='BaaHam_NUContentSideBarUserPicture2Container'>
+                            <div className='BaaHam_NUContentSideBarUserPicture2 BaaHam_PUContentSideBarUserPicture'>
+                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf BaaHam_NUContentSideBarUserPictureSelf2' />
+                            </div>
+
+                          </div>
+                          <span className='BaaHam_NUContentSideBarUserName BaaHam_NUContentSideBarUserName2 BaaHam_NUContentSideBarUserName3'>نام کاربری</span>
+                       
+                          <span className='BaaHam_NUContentSideBarUserEmail BaaHam_NUContentSideBarUserEmail2'>Example@gmail.com</span>
+                      </div>
+                    </div>
+                    <div className='BaaHam_NUContentFormHeaderSliderIcon'>
+                      <div className='BaaHam_NUContentFormHeader'>
+                          <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر املاک</span>
+                      </div>
+                    
+                      <div className='LinksTopHeaderContent_Icon' onClick={() => setDP_DrawerB(true)}>
+                          <div><HiMenu className='LinksTopHeaderContent_IconSelf'/></div>  
+                      </div>
+                    </div>
                 
                 {/*
                   sidebar===1 ?
@@ -135,6 +159,71 @@ function BaaHam_PropertyUser() {
          </div>
       </div>   
     </div>
+    <Drawer  className="Links_Drawer" anchor={'right'} open={DP_DrawerB} onClose={() => setDP_DrawerB(false)} >
+    <div className='BaaHam_NUContentSideBar BaaHam_NUContentSideBarRes'>
+ 
+              <div className='BaaHam_NUContentSideBarOptions'>
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===1 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(1)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <CgProfile/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
+                  </div>
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <MdOutlineEditNote/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
+                  
+                  </div>
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(3)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <MdManageSearch/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>اطلاعات تکمیلی </span></Link>
+                  
+                  </div>
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===4 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(4)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <GiClick/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===4 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'> معرفی کاربر</span></Link>
+              
+                  </div>
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===5 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(5)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <RiFileListLine/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===5 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>نقدینگی  </span></Link>
+                  
+                  </div>
+                  
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===6 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(6)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <RiFileListLine/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===6 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Marketer"><span className='BaaHam_NUContentSideBarOptionTitle'>بازاریاب  </span></Link>
+                  
+                  </div>
+                  
+                  <div className={['BaaHam_NUContentSideBarOption' , sidebar===7 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(7)}>
+                  <div className='BaaHam_NUContentSideBarOptionIcon'>
+                  <RiFileListLine/>
+                  </div>
+                  <Link className={['BaaHam_NULink' , sidebar===7 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/PropertyUser/Order"><span className='BaaHam_NUContentSideBarOptionTitle'>ارجاع  </span></Link>
+                  
+                  </div>
+
+                  <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
+                  <div className='BaaHam_NUContentSideBarUserExitButton'>
+                      <IoExitOutline/>
+                  </div> 
+                  <span className='BaaHam_NUContentSideBarUserExitButtonTitle'>خروج</span>
+                  </div>
+              </div>
+      
+          </div>
+        </Drawer>
 </div>
   )
 }

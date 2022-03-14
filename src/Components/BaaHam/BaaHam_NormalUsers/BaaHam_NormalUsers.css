@@ -334,6 +334,130 @@
     background-color: transparent !important;
 }
 
+.BaaHamMainFooterContainer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 936px;
+    margin:auto;
+    padding-top:30px;
+    width: 90%;
+}
+
+.BaaHamMainFooter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+
+
+    padding-bottom: 30px;
+}
+.BaaHamMainFooter2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 30px;
+    flex-direction: row;
+}
+
+.BaaHamMainFooter2RightCenter {
+    display: flex;
+    flex-direction: column;
+    flex:0.5;
+
+}
+.BaaHamMainFooterRight2 {
+    flex:0.5;
+}
+.BaaHamMainFooterRight {
+    flex:0.3;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.BaaHamMainFooterRightAboutUs {
+    color:rgb(253, 72, 0);
+    font-size: 12px;
+    font-weight: bold;
+}   
+
+.BaaHamMainFooterRightAboutUsContent {
+    color:rgb(106, 106, 106);
+    font-size: 11px;
+    margin-top:10px;
+    margin-bottom: 10px;
+       overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 12; /* number of lines to show */
+           line-clamp: 12; 
+   -webkit-box-orient: vertical;
+}
+.BaaHamMainFooterLeftIconLast {
+    color: rgb(254, 72, 0);
+    font-size: 28px;
+}
+
+
+.BaaHamMainFooterCenter {
+    flex:0.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:baseline;
+}
+.BaaHam_NormalUsersFooterCenterTitle {
+    margin-top:20px;
+}
+.BaaHam_NormalUsersFooterCenterTitleNoMargin {
+    margin-top:0px;
+}
+.BaaHamMainFooterLeft {
+    flex:0.3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.BaaHam_NormalUsersFooterImage2Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}   
+
+.BaaHam_NormalUsersFooterImage2 {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.BaaHamMainFooterLeftIconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin:auto;
+    margin-top:30px;
+    font-size:21px;
+    color:rgb(113, 111, 113);
+}
+
+.BaaHamMainFooterCenter2 {
+    flex-direction: row;
+    align-items: center;
+}
+
+.BaaHamMainFooter2 {
+    display: none;
+}
+.BaaHamMainFooter2Big {
+    display: none;
+}
 @media screen and (max-width : 1300px) {
 
     .BaaHam_NUContentSideBarOptionTitle {
@@ -435,5 +559,26 @@
 @media screen and (max-width : 625px) {
     .BaaHam_NormalUsersContent {
         width: 90%;
+    }
+}
+
+@media screen and (max-width : 549px) {
+    .BaaHamMainFooter {
+        display: none;
+    }
+    .BaaHamMainFooter2 {
+        display: flex;
+    }
+    .BaaHamMainFooter2Big {
+        display: inline;
+    }
+    .BaaHamMainFooterRight2 {
+        flex:0.5;
+    }
+    .BaaHamMainFooter2RightCenter {
+        flex:0.4;
+    }
+    .BaaHam_NormalUsersFooterImage2ContainerRes {
+        margin-top:30px;
     }
 }
