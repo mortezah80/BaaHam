@@ -45,8 +45,8 @@ function BaaHam_MarketerUser() {
              
                     <div className='BaaHam_NUContentSideBar'>
                         <div className='BaaHam_NUContentSideBarUser'>
-                            <div className='BaaHam_NUContentSideBarUserPicture'>
-                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf' />
+                            <div className='BaaHam_NUContentSideBarUserPicture BaaHam_MUContentSideBarUserPicture'>
+                                <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf ' />
                             </div>
                             <span className='BaaHam_NUContentSideBarUserName'>نام کاربری</span>
                             <span className='BaaHam_NUContentSideBarUserEmail'>Example@gmail.com</span>
