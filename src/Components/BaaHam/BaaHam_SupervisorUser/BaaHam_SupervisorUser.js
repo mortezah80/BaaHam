@@ -208,13 +208,13 @@ function BaaHam_SupervisorUser() {
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <CgProfile/>
                             </div>
-                            <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/SupervisorUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
+                            <Link  onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/SupervisorUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <MdOutlineEditNote/>
                             </div>
-                            <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/SupervisorUser/Waiting"><span className='BaaHam_NUContentSideBarOptionTitle'>در انتظار تایید </span></Link>
+                            <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/SupervisorUser/Waiting"><span className='BaaHam_NUContentSideBarOptionTitle'>در انتظار تایید </span></Link>
                             
                             </div>
 

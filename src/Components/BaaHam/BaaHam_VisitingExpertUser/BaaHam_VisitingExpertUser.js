@@ -197,34 +197,34 @@ function BaaHam_VisitingExpertUser() {
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <CgProfile/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <MdOutlineEditNote/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
                         
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(3)}>
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <MdManageSearch/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Information"><span className='BaaHam_NUContentSideBarOptionTitle'>اطلاعات تکمیلی </span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Information"><span className='BaaHam_NUContentSideBarOptionTitle'>اطلاعات تکمیلی </span></Link>
                         
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===4 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(4)}>
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <GiClick/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===4 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Introduction"><span className='BaaHam_NUContentSideBarOptionTitle'> معرفی کاربر</span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===4 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Introduction"><span className='BaaHam_NUContentSideBarOptionTitle'> معرفی کاربر</span></Link>
                     
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===5 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(5)}>
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <RiFileListLine/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===5 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Money"><span className='BaaHam_NUContentSideBarOptionTitle'>نقدینگی  </span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===5 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Money"><span className='BaaHam_NUContentSideBarOptionTitle'>نقدینگی  </span></Link>
                         
                         </div>
                         
@@ -232,7 +232,7 @@ function BaaHam_VisitingExpertUser() {
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <RiFileListLine/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===6 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Marketer"><span className='BaaHam_NUContentSideBarOptionTitle'>بازاریاب  </span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===6 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Marketer"><span className='BaaHam_NUContentSideBarOptionTitle'>بازاریاب  </span></Link>
                         
                         </div>
                         
@@ -240,7 +240,7 @@ function BaaHam_VisitingExpertUser() {
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <RiFileListLine/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===7 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Order"><span className='BaaHam_NUContentSideBarOptionTitle'>ارجاع  </span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===7 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/Order"><span className='BaaHam_NUContentSideBarOptionTitle'>ارجاع  </span></Link>
                         
                         </div>
 
@@ -249,7 +249,7 @@ function BaaHam_VisitingExpertUser() {
                         <div className='BaaHam_NUContentSideBarOptionIcon'>
                         <RiFileListLine/>
                         </div>
-                        <Link className={['BaaHam_NULink' , sidebar===8 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/MyHouses"><span className='BaaHam_NUContentSideBarOptionTitle'>ملک های من  </span></Link>
+                        <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===8 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/VisitingExpertUser/MyHouses"><span className='BaaHam_NUContentSideBarOptionTitle'>ملک های من  </span></Link>
                         
                         </div>
 

@@ -203,13 +203,13 @@ function BaaHam_ContentproductionUser() {
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <CgProfile/>
                             </div>
-                            <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/ContentproductionUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
+                            <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/ContentproductionUser/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
                             </div>
                             <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
                             <div className='BaaHam_NUContentSideBarOptionIcon'>
                             <MdOutlineEditNote/>
                             </div>
-                            <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/ContentproductionUser/Make"><span className='BaaHam_NUContentSideBarOptionTitle'>تولید محتوا   </span></Link>
+                            <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/ContentproductionUser/Make"><span className='BaaHam_NUContentSideBarOptionTitle'>تولید محتوا   </span></Link>
                             
                             </div>
 

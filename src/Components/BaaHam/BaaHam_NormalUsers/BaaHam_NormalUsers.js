@@ -59,11 +59,11 @@ function BaaHam_NormalUsers() {
                           <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
                           
                         </div>
-                        <div className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(3)}>
+                        <div onClick={() => setDP_DrawerB(false)} className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <MdManageSearch/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Check"><span className='BaaHam_NUContentSideBarOptionTitle'>ارزیابی ملک</span></Link>
+                          <Link  className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Check"><span className='BaaHam_NUContentSideBarOptionTitle'>ارزیابی ملک</span></Link>
                           
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===4 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(4)}>
@@ -251,41 +251,41 @@ function BaaHam_NormalUsers() {
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <CgProfile/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
+                          <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===1 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Profile"><span className='BaaHam_NUContentSideBarOptionTitle'>پروفایل</span></Link>
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===2 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(2)}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <MdOutlineEditNote/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
+                          <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
                           
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(3)}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <MdManageSearch/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Check"><span className='BaaHam_NUContentSideBarOptionTitle'>ارزیابی ملک</span></Link>
+                          <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===3 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Check"><span className='BaaHam_NUContentSideBarOptionTitle'>ارزیابی ملک</span></Link>
                           
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===4 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(4)}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <GiClick/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===4 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Requests"><span className='BaaHam_NUContentSideBarOptionTitle'>درخواست ها</span></Link>
+                          <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===4 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Requests"><span className='BaaHam_NUContentSideBarOptionTitle'>درخواست ها</span></Link>
                       
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===5 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(5)}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <RiFileListLine/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===5 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/AgahihayeMan"><span className='BaaHam_NUContentSideBarOptionTitle'>آگهی های من</span></Link>
+                          <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===5 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/AgahihayeMan"><span className='BaaHam_NUContentSideBarOptionTitle'>آگهی های من</span></Link>
                           
                         </div>
                         <div className={['BaaHam_NUContentSideBarOption' , sidebar===6 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(6)}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <AiOutlineHeart/>
                           </div>
-                          <Link className={['BaaHam_NULink' , sidebar===6 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Favorites"><span className='BaaHam_NUContentSideBarOptionTitle'>علاقه مندی ها</span></Link>
+                          <Link onClick={() => setDP_DrawerB(false)} className={['BaaHam_NULink' , sidebar===6 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/Favorites"><span className='BaaHam_NUContentSideBarOptionTitle'>علاقه مندی ها</span></Link>
                           
                         </div>
                         <div className='BaaHam_NUContentSideBarUserExitButtonContainer'>
