@@ -1,7 +1,7 @@
 import React from 'react'
-import './BaaHam_MU_MoneyPaidTable.css'
+import './BaaHam_PU_MoneyPaidTable.css'
 
-function BaaHam_MU_MoneyPaidTable(props) {
+function BaaHam_PU_MoneyPaidTable(props) {
     const {Tables} = props;
   return (
     <div className='BaaHam_MU_MoneyPaidTable'>
@@ -74,4 +74,4 @@ function BaaHam_MU_MoneyPaidTable(props) {
   )
 }
 
-export default BaaHam_MU_MoneyPaidTable
+export default BaaHam_PU_MoneyPaidTable

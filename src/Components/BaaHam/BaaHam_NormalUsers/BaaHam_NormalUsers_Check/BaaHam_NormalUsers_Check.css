@@ -27,11 +27,12 @@
 }
 .BaaHam_NormalUsers_ChecksLeftInput {
     flex:0.48;
-
+    margin-top:-2px;
 }
 .BaaHam_NU_SabteAgahiBottomGridCheck2 {
     margin-top:28px;
 }
 .BaaHam_NU_ProfileTextAreaCheck {
-    height: 90px;
+    height: 108px;
+    
 }

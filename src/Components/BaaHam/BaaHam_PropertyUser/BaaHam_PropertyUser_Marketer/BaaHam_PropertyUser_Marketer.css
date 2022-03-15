@@ -1,10 +1,18 @@
+.BaaHam_PropertyUser_Marketer {
+    width: 100%;
+}
 .BaaHam_PU_MarketerInputPercentBigContainer {
     display: flex;
     align-items: center;
     justify-content: left;
+    width:100.8%;
+
+}
+.BaaHam_NU_ProfileInputsContainer {
+
 }
 .BaaHam_PU_MarketerInputPercentContainer {
-    width: 47%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,7 +41,10 @@
 }
 
 .BaaHam_PU_MarketerButtonContainer {
-    margin-top:40px;
+    margin-top:20px;
+}
+.BaaHam_NU_ProfileButton {
+    margin-left:20px;
 }
 .BaaHam_PU_Marketer_TablesContainer {
     display: flex;
@@ -50,12 +61,18 @@
     }
     .BaaHam_PU_MarketerInput {
         width: 50%;
-        margin-right:10px;
-        margin-left:-9px;
+   
     }
 
     
 }
+
+@media screen and (max-width :600px)  {
+    .BaaHam_PU_MarketerInputPercentBigContainer {
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width :400px) {
     .BaaHam_PU_MarketerInputTitle {

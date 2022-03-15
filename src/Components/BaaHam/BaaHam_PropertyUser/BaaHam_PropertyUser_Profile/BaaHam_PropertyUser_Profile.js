@@ -1,4 +1,5 @@
 import React from 'react'
+import './BaaHam_PropertyUser_Profile.css'
 
 function BaaHam_PropertyUser_Profile() {
   return (

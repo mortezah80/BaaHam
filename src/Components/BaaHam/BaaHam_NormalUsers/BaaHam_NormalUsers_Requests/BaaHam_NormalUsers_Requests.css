@@ -138,8 +138,10 @@
     padding-top:10px;
     margin-top:90px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 20px;
+    justify-content: space-between;
 }
 .BaaHam_NU_RequestTicket {
     cursor: pointer;
@@ -151,7 +153,8 @@
     border-radius: 18px;
     padding: 10px 14px;
     font-size: 10px;
-    color:rgb(170, 170, 170)
+    color:rgb(170, 170, 170);
+    margin:0px 5px;
 }
 .BaaHam_NU_RequestTicket > span {
     margin-top:10px;
@@ -185,17 +188,17 @@
 
 @media screen and (max-width : 1230px)  {
     .BaaHam_NU_RequestTicketsContainer {
-        grid-template-columns:  auto auto auto;
+        grid-template-columns:  1fr 1fr 1fr;
     }
 }
 @media screen and (max-width : 1100px)  {
     .BaaHam_NU_RequestTicketsContainer {
-        grid-template-columns:  auto auto auto auto;
+        grid-template-columns:  1fr 1fr 1fr 1fr;
     }
 }
 @media screen and (max-width : 960px)  {
     .BaaHam_NU_RequestTicketsContainer {
-        grid-template-columns:  auto auto auto;
+        grid-template-columns:  1fr 1fr 1fr;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -215,14 +218,14 @@
 }
 @media screen and (max-width : 760px) {
     .BaaHam_NU_RequestTicketsContainer {
-        grid-template-columns:  auto auto;
+        grid-template-columns:  1fr 1fr;
         align-items: center;
         justify-content: space-evenly;
     }
 }
 @media screen and (max-width : 500px)  {
     .BaaHam_NU_RequestTicketsContainer {
-        grid-template-columns:  auto;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
     }

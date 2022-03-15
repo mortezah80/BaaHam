@@ -1,10 +1,10 @@
 import React from 'react'
-import './BaaHam_MarketerUser_Information.css'
+import './BaaHam_PropertyUser_Information.css'
 import { useMediaQuery } from 'react-responsive'
 import Select from 'react-select'
 
 
-function BaaHam_MarketerUser_Information() {
+function BaaHam_PropertyUser_Information() {
     const res500 = useMediaQuery({ query: '(max-width: 500px)' })
     const res600 = useMediaQuery({ query: '(max-width: 600px)' })
     const res700 = useMediaQuery({ query: '(max-width: 700px)' })
@@ -161,7 +161,7 @@ function BaaHam_MarketerUser_Information() {
             </div>
         </div>
         <div className='BaaHam_MU_InformationInputsContainer BaaHam_MU_InformationInputsContainer4'>
-            <div className='BaaHam_NU_ProfileInputContainer3 BaaHam_NU_ProfileInputContainer3MURes BaaHam_NU_ProfileInputContainer3MURes2 BaaHam_NU_ProfileInputContainer32'>
+            <div className='BaaHam_NU_ProfileInputContainer3 BaaHam_NU_ProfileInputContainer3MURes BaaHam_NU_ProfileInputContainer3MURes2'>
                 <div className='BaaHam_NU_ProfileInputContainer BaaHam_MU_InformationInputContainer4_1'>
                     <span className='BaaHam_NU_ProfileInputTitle'>شماره حساب </span>
                     <input className='BaaHam_NU_ProfileInput BaaHam_MU_InformationInput4_1' type="text" />
@@ -181,7 +181,7 @@ function BaaHam_MarketerUser_Information() {
             </div>
         </div>
         <div className='BaaHam_NU_ProfileButtonContainer BaaHam_MU_InformationButtonContainer'>
-            <div className='BaaHam_NU_ProfileButton BaaHam_MU_InformationButton'>
+            <div className='BaaHam_NU_ProfileButton'>
                 <span>ثبت</span>
             </div>
         </div>
@@ -189,4 +189,4 @@ function BaaHam_MarketerUser_Information() {
   )
 }
 
-export default BaaHam_MarketerUser_Information
+export default BaaHam_PropertyUser_Information

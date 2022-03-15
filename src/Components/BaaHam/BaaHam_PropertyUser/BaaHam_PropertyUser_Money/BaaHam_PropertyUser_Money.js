@@ -1,9 +1,9 @@
 import React from 'react'
-import './BaaHam_MarketerUser_Money.css'
-import BaaHam_MU_MoneyInProgressTable from './BaaHam_MU_MoneyInProgressTable'
-import BaaHam_MU_MoneyPaidTable from './BaaHam_MU_MoneyPaidTable'
+import './BaaHam_PropertyUser_Money.css'
+import BaaHam_PU_MoneyInProgressTable from './BaaHam_PU_MoneyInProgressTable'
+import BaaHam_PU_MoneyPaidTable from './BaaHam_PU_MoneyPaidTable'
 
-function BaaHam_MarketerUser_Money() {
+function BaaHam_PropertyUser_Money() {
     let Tables = [ 
         {
             TableNumber : 1,
@@ -82,7 +82,7 @@ function BaaHam_MarketerUser_Money() {
                 <span>در حال انجام</span>
             </div>
             <div className='BaaHam_MarketerUser_MoneyInProgressTables'>
-                <BaaHam_MU_MoneyInProgressTable Tables={Tables2}/>
+                <BaaHam_PU_MoneyInProgressTable Tables={Tables2}/>
             </div>
         </div>
         <div className='BaaHam_MarketerUser_MoneyInProgressContainer'>
@@ -90,7 +90,7 @@ function BaaHam_MarketerUser_Money() {
                 <span>در حال انجام</span>
             </div>
             <div className='BaaHam_MarketerUser_MoneyInProgressTables'>
-                <BaaHam_MU_MoneyPaidTable Tables={Tables}/>
+                <BaaHam_PU_MoneyPaidTable Tables={Tables}/>
             </div>
         </div>
         <div className='BaaHam_MarketerUser_MoneyFooter'>
@@ -112,4 +112,4 @@ function BaaHam_MarketerUser_Money() {
   )
 }
 
-export default BaaHam_MarketerUser_Money
+export default BaaHam_PropertyUser_Money

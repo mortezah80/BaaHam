@@ -15,8 +15,22 @@ function BaaHam_PropertyUser_Order() {
     }
   return (
     <div className='BaaHam_PropertyUser_Order'>
+        <div className='BaaHam_PU_OrderMarketerBoxHeader'>
+            <span>معرفی کاربران از طریق بازاریاب</span>
+        </div>
         <BaaHam_PU_OrderMarketerBox Data={table} TableNumber={1}/>
+        <BaaHam_PU_OrderMarketerBox Data={table} TableNumber={2}/>
+        <BaaHam_PU_OrderMarketerBox Data={table} TableNumber={3}/>
+
+
+
+        <div className='BaaHam_PU_OrderMarketerBoxHeader'>
+            <span>معرفی کاربران از طریق مدیر</span>
+        </div>
         <BaaHam_PU_OrderManagerBox Data={table} TableNumber={1}/>
+        <BaaHam_PU_OrderManagerBox Data={table} TableNumber={2}/>
+        <BaaHam_PU_OrderManagerBox Data={table} TableNumber={3}/>
+
     </div>
   )
 }

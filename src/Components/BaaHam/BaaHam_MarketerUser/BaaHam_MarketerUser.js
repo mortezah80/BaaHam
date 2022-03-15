@@ -101,7 +101,7 @@ function BaaHam_MarketerUser() {
                       <div className='BaaHam_NUContentSideBarUser2'>
                         <span className='BaaHam_NUContentSideBarUserName BaaHam_NUContentSideBarUserName2'>نام کاربری</span>
                           <div className='BaaHam_NUContentSideBarUserPicture2Container'>
-                            <div className='BaaHam_NUContentSideBarUserPicture2'>
+                            <div className='BaaHam_NUContentSideBarUserPicture2 BaaHam_MUContentSideBarUserPicture'>
                                 <img src={UserImage} alt="hi" className='BaaHam_NUContentSideBarUserPictureSelf BaaHam_NUContentSideBarUserPictureSelf2' />
                             </div>
 
@@ -183,7 +183,7 @@ function BaaHam_MarketerUser() {
                         <div className='BaaHamMainFooterRight'>
                               <span className='BaaHamMainFooterRightAboutUsContent'>توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد.توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد.توضیحات اضافه برای اینکه بببینیم در فوتر چه اتفاقی می افتد وقتی که یک متن طولانی به عنوان توضیحات باشد</span>
                               <div className='BaaHam_NormalUsersHeaderTopRight'>
-                              <div className='BaaHam_NormalUsersHeaderImageContainer'>
+                              <div className='BaaHam_NormalUsersHeaderImageContainer '>
                                 <img className='BaaHam_NormalUsersHeaderImage' src={Image3} alt="hi"/>
                                 </div>
                                 <span className='BaaHam_NormalUsersHeaderImageTitle'>(با هم حلش میکنیم)</span>

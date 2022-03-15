@@ -1,7 +1,7 @@
 import React from 'react'
-import './BaaHam_MU_MoneyInProgressTable.css'
+import './BaaHam_PU_MoneyInProgressTable.css'
 
-function BaaHam_MU_MoneyInProgressTable(props) {
+function BaaHam_PU_MoneyInProgressTable(props) {
   const {Tables} = props;
   return (
     <div className='BaaHam_MU_MoneyInProgressTable'>
@@ -49,4 +49,4 @@ function BaaHam_MU_MoneyInProgressTable(props) {
   )
 }
 
-export default BaaHam_MU_MoneyInProgressTable
+export default BaaHam_PU_MoneyInProgressTable

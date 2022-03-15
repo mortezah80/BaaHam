@@ -12,12 +12,7 @@ function BaaHam_SupervisorUser_Waiting() {
   if (res700) {
       selectHeight = "33px"
   }
-  if (res600) {
-      selectHeight = "27px"
-  }
-  if (res500) {
-      selectHeight = "23px"
-  }
+
   const optionsList1 = [
       { label: 'Option 1', value: 'Option 1'},
       { label: 'Option 2', value: 'Option 2'},
@@ -64,8 +59,7 @@ function BaaHam_SupervisorUser_Waiting() {
       valueContainer: (provided, state) => ({
           ...provided,
           height: selectHeight,
-          padding: '0 6px',
-          paddingBottom:'5px',
+
           display:'flex',
           fontSize:'13px',
           color: 'rgb(178, 178, 178)',
@@ -107,12 +101,15 @@ function BaaHam_SupervisorUser_Waiting() {
     const [Choose, SetChoose] = useState(1)
   return (
     <div className='BaaHam_SupervisorUser_Waiting'>
-        <div className='BaaHam_SU_WaitingBoxes'>
-            <BaaHam_SU_WaitingBox Choose={Choose===1? true : false} SetChoose={SetChoose} BoxNumber={1}/>
-            <BaaHam_SU_WaitingBox Choose={Choose===2? true : false}  SetChoose={SetChoose} BoxNumber={2}/>
-            <BaaHam_SU_WaitingBox Choose={Choose===3? true : false} SetChoose={SetChoose} BoxNumber={3}/>
-            <BaaHam_SU_WaitingBox Choose={Choose===4? true : false} SetChoose={SetChoose} BoxNumber={4}/>
-        </div>
+            <div className='BaaHam_SU_WaitingBoxes'>
+                <BaaHam_SU_WaitingBox Choose={Choose===1? true : false} SetChoose={SetChoose} BoxNumber={1}/>
+                <BaaHam_SU_WaitingBox Choose={Choose===2? true : false}  SetChoose={SetChoose} BoxNumber={2}/>
+                <BaaHam_SU_WaitingBox Choose={Choose===3? true : false} SetChoose={SetChoose} BoxNumber={3}/>
+                <BaaHam_SU_WaitingBox Choose={Choose===4? true : false} SetChoose={SetChoose} BoxNumber={4}/>
+                <BaaHam_SU_WaitingBox Choose={Choose===5? true : false} SetChoose={SetChoose} BoxNumber={5}/>
+                <BaaHam_SU_WaitingBox Choose={Choose===6? true : false} SetChoose={SetChoose} BoxNumber={6}/>
+            </div>
+    
         <div className='BaaHam_SupervisorUser_WaitingInformation'>
             
         </div>

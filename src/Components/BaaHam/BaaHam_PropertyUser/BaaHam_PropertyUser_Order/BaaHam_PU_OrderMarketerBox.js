@@ -5,9 +5,7 @@ function BaaHam_PU_OrderMarketerBox(props) {
     const {Data} = props;
   return (
     <div className='BaaHam_PU_OrderMarketerBox'>
-        <div className='BaaHam_PU_OrderMarketerBoxHeader'>
-            <span>معرفی کاربران از طریق بازاریاب</span>
-        </div>
+    
         <div className='BaaHam_PU_Marketer_Table'>
             <div className='BaaHam_PU_Marketer_TableNumberContainer'>
                 <div className='BaaHam_PU_Marketer_TableNumber'>
