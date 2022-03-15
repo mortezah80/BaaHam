@@ -14,8 +14,11 @@ function BaaHam_VisitingExpertUser_Order() {
     }
   return (
     <div className='BaaHam_PropertyUser_Order'>
+      <div className='BaaHam_PU_OrderMarketerBoxHeader'>
+        <span>معرفی کاربران از طریق بازاریاب</span>
+    </div>
     <BaaHam_VEU_OrderBox Data={table} TableNumber={1}/>
- 
+    <BaaHam_VEU_OrderBox Data={table} TableNumber={2}/>
     </div>
   )
 }

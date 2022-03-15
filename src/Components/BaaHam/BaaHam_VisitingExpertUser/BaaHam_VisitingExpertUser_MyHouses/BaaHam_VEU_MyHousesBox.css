@@ -107,3 +107,12 @@
 .BaaHam_VEU_RequestBottomButtons {
     justify-content: left;
 }
+
+
+
+
+@media screen and (max-width : 492px) {
+    .BaaHam_VEU_ProfileInputTitleRes {
+        font-size: 10px;
+    }
+}

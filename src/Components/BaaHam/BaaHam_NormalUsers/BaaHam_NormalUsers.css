@@ -343,7 +343,13 @@
     padding-top:30px;
     width: 90%;
 }
-
+.BaaHam_NUContentSideBarRes {
+    padding: 0px;
+    margin: 0px;
+}
+.MuiDrawer-paper {
+    background-color: rgb(245, 245, 245) !important;
+}
 .BaaHamMainFooter {
     display: flex;
     align-items: flex-start;

@@ -38,26 +38,26 @@ function BaaHam_VEU_MyHousesBox(props) {
                     </div>
                     <div className='BaaHam_VEU_MyHousesBoxMoreContentContainer'>
                         <div className='BaaHam_VEU_MyHousesBoxMoreItem'>
-                            <span className='BaaHam_NU_ProfileInputTitle'>شماره سفارش</span>
+                            <span className='BaaHam_NU_ProfileInputTitle BaaHam_VEU_ProfileInputTitleRes'>شماره سفارش</span>
                             <span className='BaaHam_VEU_MyHousesBoxMoreItemContent'></span>
                         </div>
                         <div className='BaaHam_VEU_MyHousesBoxMoreItem'>
-                            <span className='BaaHam_NU_ProfileInputTitle'>نام و نام خانوادگی</span>
+                            <span className='BaaHam_NU_ProfileInputTitle BaaHam_VEU_ProfileInputTitleRes'>نام و نام خانوادگی</span>
                             <span className='BaaHam_VEU_MyHousesBoxMoreItemContent'></span>
                         </div>
                     </div>
                     <div className='BaaHam_VEU_MyHousesBoxMoreContentContainer2'>
                         <div className='BaaHam_VEU_MyHousesBoxMoreContainer2AdressContainer'>
-                            <span className='BaaHam_NU_ProfileInputTitle'>آدرس </span>
+                            <span className='BaaHam_NU_ProfileInputTitle BaaHam_VEU_ProfileInputTitleRes'>آدرس </span>
                             <span className='BaaHam_VEU_MyHousesBoxMoreContainer2AdressContent'></span>
                         </div>
                         <div className='BaaHam_VEU_MyHousesBoxMoreContainer2Contacts'>
                             <div className='BaaHam_VEU_MyHousesBoxMoreItem BaaHam_VEU_MyHousesBoxMoreItem2'>
-                                <span className='BaaHam_NU_ProfileInputTitle'>شماره تماس</span>
+                                <span className='BaaHam_NU_ProfileInputTitle BaaHam_VEU_ProfileInputTitleRes'>شماره تماس</span>
                                 <span className='BaaHam_VEU_MyHousesBoxMoreItemContent'></span>
                             </div>
                             <div className='BaaHam_VEU_MyHousesBoxMoreItem BaaHam_VEU_MyHousesBoxMoreItem2'>
-                                <span className='BaaHam_NU_ProfileInputTitle'>کد پستی</span>
+                                <span className='BaaHam_NU_ProfileInputTitle BaaHam_VEU_ProfileInputTitleRes'>کد پستی</span>
                                 <span className='BaaHam_VEU_MyHousesBoxMoreItemContent'></span>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ function BaaHam_VEU_MyHousesBox(props) {
                     </div>
                     <div className='BaaHam_VEU_MyHousesBoxMoreFooter'> 
                         <div className='BaaHam_VEU_MyHousesBoxMoreFooterItem'>
-                            <span className='BaaHam_NU_ProfileInputTitle'>ارسال پیگیری</span>
+                            <span className='BaaHam_NU_ProfileInputTitle BaaHam_VEU_ProfileInputTitleRes'>ارسال پیگیری</span>
                             <span className='BaaHam_VEU_MyHousesBoxMoreFooterItemBox'></span>
                         </div>
                     </div>

@@ -72,7 +72,7 @@
     color:white;
 }
 .BaaHam_PU_Marketer_TableNumber > span{
-    padding-bottom: 4px;
+
 }
 
 @media screen and (max-width : 493px) {
@@ -81,5 +81,11 @@
     }
     .BaaHam_PU_Marketer_TableContent {
         font-size:10px;
+    }
+    .BaaHam_PU_Marketer_TableNumber {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+        border-radius: 8px;
     }
 }
