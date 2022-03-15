@@ -25,7 +25,7 @@ function BaaHam_PU_Marketer_Table(props) {
             </div>
             <div className='BaaHam_PU_Marketer_TableTitles'>
                 <span  className='BaaHam_PU_Marketer_TableTitle'>وضعیت</span>
-                <span  className='BaaHam_PU_Marketer_TableTitle'>تعداد سفارش</span>
+                <span  className='BaaHam_PU_Marketer_TableTitle BaaHam_PU_Marketer_TableTitle3'>تعداد سفارش</span>
                 <span  className='BaaHam_PU_Marketer_TableTitle'>نقدینگی</span>
                 <span  className='BaaHam_PU_Marketer_TableTitle'>جزئیات</span>
             </div>

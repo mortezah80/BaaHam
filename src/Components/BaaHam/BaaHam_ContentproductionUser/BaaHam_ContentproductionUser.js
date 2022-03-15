@@ -82,7 +82,7 @@ function BaaHam_ContentproductionUser() {
                     </div>
                     <div className='BaaHam_NUContentFormHeaderSliderIcon'>
                       <div className='BaaHam_NUContentFormHeader'>
-                          <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر عادی</span>
+                          <span className='BaaHam_NUContentFormHeaderTitle'>باهم | داشبورد کاربر تولید محتوا</span>
                       </div>
                     
                       <div className='LinksTopHeaderContent_Icon' onClick={() => setDP_DrawerB(true)}>

@@ -7,7 +7,7 @@
 
 
 .BaaHam_NU_ProfileInputContainer3 {
-    width: 90% !important;
+    width: 100% !important;
     display: flex;
     align-items: center;
     position: relative;
@@ -21,11 +21,14 @@
   
 
 }
+.InputExactContainerForBackMUinformation {
+    position: relative;
+}
 .BaaHam_MU_InformationInput1 {
-    width: 170px !important;
+    width: 93% !important;
 }
 .BaaHam_MU_InformationInput2 {
-    width: 60px !important;
+    width: 90% !important;
     margin-right:10px;
 }
 .BaaHam_MU_InformationInputTitle {
@@ -46,7 +49,7 @@
 
 .BaaHam_MU_SabteAgahiAreaSelect {
  
-    background-color: red;
+
 }
 .BaaHam_NU_ProfileInputsContainer {
 }
@@ -94,13 +97,13 @@
     position: relative;
 }
 .BaaHam_MU_InformationInput4 {
-    width:100% !important;
+    width:93% !important;
 }
 .BaaHam_MU_InformationInputContainer4_1 {
     flex:0.35;
 }
 .BaaHam_MU_InformationInput4_1 {
-    width: 100% !important;
+    width:93% !important;
 }
 .BaaHam_MU_InformationFooterContainer {
     display: flex;
@@ -141,7 +144,7 @@
         margin:0px !important;
     }
     .BaaHam_MU_InformationInput2 {
-        width: 100% !important;
+        width: 90% !important;
         margin-right:0px;
     }
     .BaaHam_MU_InformationInputContainer {
@@ -154,11 +157,9 @@
         grid-template-columns: 1fr;
         row-gap: 10px;
     }
-    .BaaHam_MU_InformationInput1 {
-        width: 100% !important;
-    }
+
     .BaaHam_MU_ProfileInput3 {
-        width: 96% !important;
+        width: 90% !important;
     }
     .BaaHam_MU_InformationFooterContainer {
         width: 100%;

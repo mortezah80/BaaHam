@@ -161,15 +161,27 @@
 }
 .BaaHam_NU_SabteAgahiBottomGridTitleExact {
     margin-bottom: 4px;
+    margin-top:20px;
 }
-.BaaHam_NU_SabteAgahiBottomGridInput {
+.BaaHam_NU_SabteAgahiBottomGridInputForBack2 {
     background-color: rgb(245, 245, 245);
-    border: none;
     border-radius: 10px;
-    height: 30px;
-    outline: none;
+    height: 30px ;
     margin-top:5px;
     width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BaaHam_NU_SabteAgahiBottomGridInput {
+    border: none;
+    outline: none;
+    width: 93% !important;
+    height: 30px !important;
+    margin:0px !important;
+    margin:auto !important;
+    background-color: transparent !important;
 }
 .BaaHam_NU_SabteAgahiBottomGridInput:focus{
     border:none;
@@ -213,7 +225,8 @@
     height: 30px;
     outline: none;
     margin-top:10px;
-    width: 50%;
+    width: 93% !important;
+    margin:auto;
     margin-bottom: 10px;
 }
 .BaaHam_NU_SabteAgahiBottomGridInput2:focus{
@@ -407,13 +420,25 @@
     display: flex;
 }
 
-
+.InputExactContainerForBackTextAreaSabteAgahi2 {
+    height: 100px;
+}
 
 .TestContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.BaaHam_NU_SabteAgahiBottomGridInputForBack2Agahi {
+    width: 48%;
+    margin-top:10px;
+
+}
+
+
+
+
 @media screen and (max-width : 900px) {
     .BaaHam_NormalUsers_SabteAgahiAreaMapContainer {
         flex:0.4;

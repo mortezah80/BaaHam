@@ -15,6 +15,7 @@
     align-items: center;
     position: relative;
     justify-content: space-between;
+    column-gap: 20px;
 
 }
 .BaaHam_MU_InformationInputContainer {
@@ -22,10 +23,10 @@
 
 }
 .BaaHam_MU_InformationInput1 {
-    width: 170px !important;
+    width: 90% !important;
 }
 .BaaHam_MU_InformationInput2 {
-    width: 60px !important;
+    width: 90% !important;
     margin-right:10px;
 }
 .BaaHam_MU_InformationInputTitle {
@@ -90,13 +91,13 @@
     position: relative;
 }
 .BaaHam_MU_InformationInput4 {
-    width:100% !important;
+    width:93% !important;
 }
 .BaaHam_MU_InformationInputContainer4_1 {
     flex:0.35;
 }
 .BaaHam_MU_InformationInput4_1 {
-    width: 100% !important;
+    width: 93% !important;
 }
 .BaaHam_MU_InformationFooterContainer {
     display: flex;
@@ -137,7 +138,7 @@
         margin:0px !important;
     }
     .BaaHam_MU_InformationInput2 {
-        width: 100% !important;
+        width: 90% !important;
         margin-right:0px;
     }
     .BaaHam_MU_InformationInputContainer {
@@ -151,7 +152,7 @@
         row-gap: 10px;
     }
     .BaaHam_MU_InformationInput1 {
-        width: 100% !important;
+        width: 90% !important;
     }
     .BaaHam_MU_ProfileInput3 {
         width: 96% !important;

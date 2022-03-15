@@ -34,5 +34,12 @@
 }
 .BaaHam_NU_ProfileTextAreaCheck {
     height: 108px;
-    
+    width: 93%;
+}
+.InputExactContainerForBackTextAreaCheckNormal {
+    height: 131px;
+    margin-top:8px;
+}
+.BaaHam_NU_ProfileButtonCheck2 {
+    margin-left:10px !important;
 }

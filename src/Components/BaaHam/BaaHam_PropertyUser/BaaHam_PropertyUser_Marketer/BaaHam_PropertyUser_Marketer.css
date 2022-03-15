@@ -5,18 +5,20 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    width:100.8%;
+    width:100%;
 
 }
 .BaaHam_NU_ProfileInputsContainer {
 
 }
 .BaaHam_PU_MarketerInputPercentContainer {
-    width: 45%;
+    width: 46%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top:20px;
+    column-gap: 10px;
+
 }
 .BaaHam_PU_MarketerInputTitleContainer {
     background-color: rgb(52, 52, 52);
@@ -27,17 +29,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 11px;
+    font-size: 9.5px;
     font-weight: bold;
+    min-width: 100px;
     
 }
 .BaaHam_PU_MarketerInputTitleContainer > span {
     padding-bottom: 5px;
 }
 .BaaHam_PU_MarketerInput {
-    width: 49%;
+    width: 93%;
     margin:0px;
     height: 36px;
+
 }
 
 .BaaHam_PU_MarketerButtonContainer {
@@ -60,7 +64,7 @@
         justify-content: space-between;
     }
     .BaaHam_PU_MarketerInput {
-        width: 50%;
+        width: 93%;
    
     }
 

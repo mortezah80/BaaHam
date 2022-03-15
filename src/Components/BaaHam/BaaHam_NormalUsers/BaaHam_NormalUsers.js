@@ -59,7 +59,7 @@ function BaaHam_NormalUsers() {
                           <Link className={['BaaHam_NULink' , sidebar===2 ? "BaaHam_NULinkActive" : ""].join(" ")} to="/NormalUsers/SabteAgahi"><span className='BaaHam_NUContentSideBarOptionTitle'>ثبت آگهی</span></Link>
                           
                         </div>
-                        <div onClick={() => setDP_DrawerB(false)} className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")}>
+                        <div  className={['BaaHam_NUContentSideBarOption' , sidebar===3 ? "BaaHam_NUContentSideBarOptionActive" : ""].join(" ")} onClick={() => Setsidebar(3)}>
                           <div className='BaaHam_NUContentSideBarOptionIcon'>
                            <MdManageSearch/>
                           </div>
@@ -113,7 +113,7 @@ function BaaHam_NormalUsers() {
                     </div>
                     <div className='BaaHam_NUContentFormHeaderSliderIcon'>
                       <div className='BaaHam_NUContentFormHeader'>
-                          <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر عادی</span>
+                          <span className='BaaHam_NUContentFormHeaderTitle'>باهم | داشبورد کاربر عادی</span>
                       </div>
                     
                       <div className='LinksTopHeaderContent_Icon' onClick={() => setDP_DrawerB(true)}>

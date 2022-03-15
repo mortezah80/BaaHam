@@ -5,3 +5,16 @@
     width:65%;
     margin: auto;
 }
+
+@media screen and (max-width :750px) {
+    .BaaHam_PU_Marketer_TableTitle3 {
+        width: 31%;
+    
+    }  
+}
+@media screen and (max-width :370px) {
+    .BaaHam_PU_Marketer_TableTitle3 {
+        width: 33%;
+    
+    }  
+}

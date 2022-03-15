@@ -17,27 +17,37 @@ function BaaHam_VisitingExpertUser_Marketer() {
         <div className='BaaHam_NU_ProfileInputsContainer'>
         <div className='BaaHam_NU_ProfileInputContainer'>
             <span className='BaaHam_NU_ProfileInputTitle'>نام</span>
-            <input className='BaaHam_NU_ProfileInput' type="text" />
+            <div className='InputExactContainerForBack'>
+                <input className='BaaHam_NU_ProfileInput' type="text" />
+            </div>
         </div>
         <div className='BaaHam_NU_ProfileInputContainer'>
             <span className='BaaHam_NU_ProfileInputTitle'>نام خانوادگی</span>
-            <input className='BaaHam_NU_ProfileInput' type="text" />
+            <div className='InputExactContainerForBack'>
+                <input className='BaaHam_NU_ProfileInput' type="text" />
+            </div>
         </div>
         <div className='BaaHam_NU_ProfileInputContainer'>
             <span className='BaaHam_NU_ProfileInputTitle'>شماره تلفن</span>
-            <input className='BaaHam_NU_ProfileInput' type="text" />
+            <div className='InputExactContainerForBack'>
+                <input className='BaaHam_NU_ProfileInput' type="text" />
+            </div>
         </div>
         <div className='BaaHam_NU_ProfileInputContainer'>
             <span className='BaaHam_NU_ProfileInputTitle'>ایمیل</span>
-            <input className='BaaHam_NU_ProfileInput' type="text"  />
+            <div className='InputExactContainerForBack'>
+                <input className='BaaHam_NU_ProfileInput' type="text"  />
+            </div>
         </div>
     </div>
     <div className='BaaHam_PU_MarketerInputPercentBigContainer'>
         <div className='BaaHam_PU_MarketerInputPercentContainer'>
-            <div className='BaaHam_PU_MarketerInputTitleContainer'>
-                <span className='BaaHam_PU_MarketerInputTitle'>درصد سهم از خود</span>
+            <div className='BaaHam_PU_MarketerInputTitleContainer BaaHam_PU_MarketerInputTitleContainer3'>
+                <span className='BaaHam_PU_MarketerInputTitle '>درصد سهم از خود</span>
             </div>
-            <input className='BaaHam_NU_ProfileInput BaaHam_PU_MarketerInput' type="text"  />
+            <div className='InputExactContainerForBack InputExactContainerForBackVXUMarketer' >
+                <input className='BaaHam_NU_ProfileInput BaaHam_PU_MarketerInput' type="text"  />
+            </div>
         </div>
     </div>
     <div className='BaaHam_NU_ProfileButtonContainer BaaHam_PU_MarketerButtonContainer'>

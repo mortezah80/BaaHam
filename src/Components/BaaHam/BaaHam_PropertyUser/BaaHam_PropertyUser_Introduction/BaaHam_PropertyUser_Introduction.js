@@ -107,18 +107,24 @@ function BaaHam_PropertyUser_Introduction() {
     ]
   return (
     <div className='BaaHam_MarketerUser_Introduction'>
-        <div className='BaaHam_NU_ProfileInputsContainer'>
+            <div className='BaaHam_NU_ProfileInputsContainer'>
             <div className='BaaHam_NU_ProfileInputContainer'>
                 <span className='BaaHam_NU_ProfileInputTitle'>نام</span>
-                <input className='BaaHam_NU_ProfileInput' type="text" />
+                <div className='InputExactContainerForBack'>
+                    <input className='BaaHam_NU_ProfileInput' type="text" />
+                </div>
             </div>
             <div className='BaaHam_NU_ProfileInputContainer'>
                 <span className='BaaHam_NU_ProfileInputTitle'>نام خانوادگی</span>
-                <input className='BaaHam_NU_ProfileInput' type="text" />
+                <div className='InputExactContainerForBack'>
+                    <input className='BaaHam_NU_ProfileInput' type="text" />
+                </div>
             </div>
             <div className='BaaHam_NU_ProfileInputContainer'>
                 <span className='BaaHam_NU_ProfileInputTitle'>شماره تلفن</span>
-                <input className='BaaHam_NU_ProfileInput' type="text" />
+                <div className='InputExactContainerForBack'>
+                    <input className='BaaHam_NU_ProfileInput' type="text" />
+                </div>
             </div>
         </div>
         <div className='BaaHam_NU_ProfileButtonContainer'>
@@ -133,6 +139,7 @@ function BaaHam_PropertyUser_Introduction() {
         <div className='FooternoneForAb'>
 
         </div>
+
 
     </div>
   )

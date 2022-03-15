@@ -26,7 +26,7 @@ function BaaHam_PU_OrderManagerBox(props) {
             
                 </div>
                 <div className='BaaHam_PU_Marketer_TableTitles BaaHam_PU_OrderManager_TableTitles'>
-                    <span  className='BaaHam_PU_Marketer_TableTitle'>تعداد سفارش</span>
+                    <span  className='BaaHam_PU_Marketer_TableTitle BaaHam_PU_Marketer_TableTitle3'>تعداد سفارش</span>
                     <span  className='BaaHam_PU_Marketer_TableTitle'>نقدینگی</span>
             
                 </div>

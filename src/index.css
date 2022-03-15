@@ -13,6 +13,12 @@ span {
   text-align: right;
 }
 
+input {
+
+  margin:auto;
+
+}
+
 @font-face {
   font-family: IRANYekan;
   font-style: normal;

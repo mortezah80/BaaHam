@@ -120,7 +120,9 @@ function BaaHam_ContentproductionUser_Make() {
           </div>
           <div className='BaaHam_NU_ProfileInputContainer'>
                 <span className='BaaHam_NU_ProfileInputTitle'>نوشته تازه</span>
-                <input className='BaaHam_NU_ProfileInput' type="text" />
+                <div className='InputExactContainerForBack'>
+                  <input className='BaaHam_NU_ProfileInput' type="text" />
+                </div>
           </div>
         {/*<CKEditor
           editor={ClassicEditor}

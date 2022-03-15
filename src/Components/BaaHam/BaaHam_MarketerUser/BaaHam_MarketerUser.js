@@ -117,7 +117,7 @@ function BaaHam_MarketerUser() {
                         <div className='BaaHam_NUContentFormHeader'>
                           <div className='BaaHam_NUContentFormHeaderSliderIcon'>
                             <div className='BaaHam_NUContentFormHeader'>
-                                <span className='BaaHam_NUContentFormHeaderTitle'>داشبورد کاربر بازاریاب</span>
+                                <span className='BaaHam_NUContentFormHeaderTitle'>باهم | داشبورد کاربر بازاریاب</span>
                             </div>
                           
                             <div className='LinksTopHeaderContent_Icon' onClick={() => setDP_DrawerB(true)}>
