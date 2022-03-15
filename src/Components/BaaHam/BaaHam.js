@@ -81,7 +81,7 @@ function BaaHam() {
           <div className='BaaHamContent'>
      
             <Switch>
-              <Route exact path="/NormalUsers">
+              <Route path="/NormalUsers">
                 <Router>
                 <BaaHam_NormalUsers/>
                 </Router>
