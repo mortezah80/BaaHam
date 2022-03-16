@@ -3,7 +3,7 @@
 }
 
 .BaaHam_NormalUsersHeader {
-    height: 240px;
+    height: 270px;
     width: 100%;
     background-color: rgb(73, 78, 84);
     display: flex;
@@ -596,5 +596,27 @@
     }
     .BaaHam_NormalUsersFooterImage2ContainerRes {
         margin-top:30px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .BaaHam_NormalUsersHeader {
+        height: 240px;
+    }
+}
+@media screen and (max-width:700px) {
+    .BaaHam_NormalUsersHeader {
+        height: 200px;
+    }
+}
+@media screen and (max-width:600px) {
+    .BaaHam_NormalUsersHeader {
+        height: 170px;
+    }
+}
+@media screen and (max-width:360px) {
+    .BaaHam_NormalUsersHeader {
+        height: 190px;
     }
 }
