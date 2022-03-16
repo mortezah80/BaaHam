@@ -109,7 +109,9 @@ function BaaHam_SupervisorUser_Waiting() {
                 <BaaHam_SU_WaitingBox Choose={Choose===5? true : false} SetChoose={SetChoose} BoxNumber={5}/>
                 <BaaHam_SU_WaitingBox Choose={Choose===6? true : false} SetChoose={SetChoose} BoxNumber={6}/>
             </div>
-    
+        <div className='BaaHam_SupervisorUser_WaitingBlank'>
+
+        </div>
         <div className='BaaHam_SupervisorUser_WaitingInformation'>
             
         </div>
@@ -120,6 +122,7 @@ function BaaHam_SupervisorUser_Waiting() {
                       placeholder=" "
                       styles={customStyles}
                       options={optionsList1}
+                      maxMenuHeight={80}
                       >
               
               </Select>
