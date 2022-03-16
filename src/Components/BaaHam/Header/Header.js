@@ -30,11 +30,11 @@ function Header(props) {
         <div className='headerLogo'><div><img alt='' src={pic}/></div></div>
         <nav className='navbar'>
             <div className='navbarList'>
-                <Link className={['linkClassHeaderStyle' ,item1? 'activeHeaderLink':''].join(" ")} to={"/home"}><div>صفحه اصلی</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item2? 'activeHeaderLink':''].join(" ")} to={"/moshavere"}><div>کارشناسی ملک با ضمانت باهم</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item3? 'activeHeaderLink':''].join(" ")} to={"/sazandegan"}><div>فروش سفارشی ملک</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item4? 'activeHeaderLink':''].join(" ")} to={"/Blog"}><div>مطالب آموزشی</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item5? 'activeHeaderLink':''].join(" ")} to={"/About"}><div>درباره ما</div></Link>
+                <Link className={['linkClassHeaderStyle' ,item1? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>صفحه اصلی</div></Link>
+                <Link className={['linkClassHeaderStyle' ,item2? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>کارشناسی ملک با ضمانت باهم</div></Link>
+                <Link className={['linkClassHeaderStyle' ,item3? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>فروش سفارشی ملک</div></Link>
+                <Link className={['linkClassHeaderStyle' ,item4? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>مطالب آموزشی</div></Link>
+                <Link className={['linkClassHeaderStyle' ,item5? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>درباره ما</div></Link>
             </div>
         </nav>
         <div className='headerUser'>
