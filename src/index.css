@@ -47,3 +47,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+input {
+  font-family:IRANYekan !important ;
+  font-size: 11px !important;
+}
+textarea {
+  font-family:IRANYekan !important ;
+  font-size: 11px !important;
+}
