@@ -82,6 +82,12 @@
 .linkClassHeaderStyle{
     text-decoration: none;
     color: #464646 !important;
+    font-family: IRANSansX;
+    transition: all 0.1s ease;
+}
+.linkClassHeaderStyle:hover {
+    transition: all 0.1s ease;
+    color: rgba(253, 72, 0, 0.466) !important;
 }
 .activeHeaderLink{
     color: rgb(253, 73, 0) !important;

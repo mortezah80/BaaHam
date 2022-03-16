@@ -6,7 +6,7 @@ import {Link, useRouteMatch} from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive';
 function Header(props) {
   let item1 = useRouteMatch({
-    path: '/home',
+    path: 'http://5.182.44.142/home',
     exact: true
   });
   let item2 = useRouteMatch({
@@ -30,11 +30,11 @@ function Header(props) {
         <div className='headerLogo'><div><img alt='' src={pic}/></div></div>
         <nav className='navbar'>
             <div className='navbarList'>
-                <Link className={['linkClassHeaderStyle' ,item1? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>صفحه اصلی</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item2? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>کارشناسی ملک با ضمانت باهم</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item3? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>فروش سفارشی ملک</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item4? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>مطالب آموزشی</div></Link>
-                <Link className={['linkClassHeaderStyle' ,item5? 'activeHeaderLink':''].join(" ")} to={"/NormalUsers"}><div>درباره ما</div></Link>
+                <a className={['linkClassHeaderStyle' ,item1? 'activeHeaderLink':''].join(" ")} href="http://5.182.44.142/home" to={"http://5.182.44.142/home"}><div>صفحه اصلی</div></a>
+                <a className={['linkClassHeaderStyle' ,item2? 'activeHeaderLink':''].join(" ")} href="http://5.182.44.142/moshavere"  to={"http://5.182.44.142/moshavere"}><div>کارشناسی ملک با ضمانت باهم</div></a>
+                <a className={['linkClassHeaderStyle' ,item3? 'activeHeaderLink':''].join(" ")} href="http://5.182.44.142/sazandegan" to={"http://5.182.44.142/sazandegan"}><div>فروش سفارشی ملک</div></a>
+                <a className={['linkClassHeaderStyle' ,item4? 'activeHeaderLink':''].join(" ")} href="http://5.182.44.142/Blog" to={"http://5.182.44.142/post"}><div>مطالب آموزشی</div></a>
+                <a className={['linkClassHeaderStyle' ,item5? 'activeHeaderLink':''].join(" ")} href="http://5.182.44.142/about" to={"http://5.182.44.142/about"}><div>درباره ما</div></a>
             </div>
         </nav>
         <div className='headerUser'>
